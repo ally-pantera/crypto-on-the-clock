@@ -327,12 +327,73 @@
     .hero-links {
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 9px;
-      margin-bottom: 18px;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 22px;
       font-family: var(--pm-font-ui);
       font-size: 0.92rem;
       letter-spacing: 0.01em;
+    }
+
+    .hero-avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+    }
+
+    /* To use a real photo, add one style attribute to the matching
+       .hero-avatar__pic span, e.g.
+       style="background-image:url('assets/0xallyzach.jpg')"
+       The placeholder initials hide automatically when that is present. */
+    .hero-avatar__pic {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #8a8f98;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(100%);
+      border: 1px solid var(--pm-rule);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.14);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .hero-avatar__pic::after {
+      content: attr(data-initials);
+      font-family: var(--pm-font-ui);
+      font-size: 1.02rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #fff;
+    }
+
+    .hero-avatar__pic[style*="background-image"]::after {
+      content: "";
+    }
+
+    .hero-avatar__handle {
+      font-family: var(--pm-font-ui);
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: var(--pm-accent);
+      transition: color 0.15s ease;
+    }
+
+    .hero-avatar:hover .hero-avatar__pic {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero-avatar:hover .hero-avatar__handle {
+      color: var(--pm-ink);
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     .hero-powered {
@@ -1823,9 +1884,14 @@
     <div class="hero-inner">
       <h1>Crypto on the clock</h1>
       <div class="hero-links">
-        <a href="https://x.com/0xallyzach" target="_blank" rel="noopener noreferrer">@0xallyzach</a>
-        <span class="hero-links-sep">&middot;</span>
-        <a href="https://x.com/sui414" target="_blank" rel="noopener noreferrer">@sui414</a>
+        <a class="hero-avatar" href="https://x.com/0xallyzach" target="_blank" rel="noopener noreferrer">
+          <span class="hero-avatar__pic" data-initials="AZ" aria-hidden="true"></span>
+          <span class="hero-avatar__handle">@0xallyzach</span>
+        </a>
+        <a class="hero-avatar" href="https://x.com/sui414" target="_blank" rel="noopener noreferrer">
+          <span class="hero-avatar__pic" data-initials="SU" aria-hidden="true"></span>
+          <span class="hero-avatar__handle">@sui414</span>
+        </a>
       </div>
       <div class="hero-powered">
         <span>Powered by</span>
