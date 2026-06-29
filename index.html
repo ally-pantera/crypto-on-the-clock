@@ -119,27 +119,22 @@
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0;
+      gap: 18px;
       margin-top: 44px;
-      padding: 34px 14px;
       text-align: left;
-      border-radius: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      background:
-        radial-gradient(900px 360px at 88% -24%, rgba(80, 64, 176, 0.42), transparent 60%),
-        radial-gradient(720px 380px at -8% 130%, rgba(33, 79, 114, 0.55), transparent 62%),
-        var(--pm-ink);
-      box-shadow:
-        0 22px 50px -28px rgba(17, 17, 22, 0.62),
-        inset 0 1px 0 rgba(255, 255, 255, 0.06);
     }
 
     .hero-stat {
-      padding: 4px 30px;
-    }
-
-    .hero-stat + .hero-stat {
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 26px 26px 28px;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background:
+        radial-gradient(700px 320px at 88% -30%, rgba(80, 64, 176, 0.40), transparent 62%),
+        radial-gradient(560px 320px at -10% 140%, rgba(33, 79, 114, 0.52), transparent 64%),
+        var(--pm-ink);
+      box-shadow:
+        0 22px 50px -30px rgba(17, 17, 22, 0.60),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
     }
 
     .hero-stat-value {
@@ -226,7 +221,7 @@
     }
 
     .report-hero .dek {
-      max-width: 660px;
+      max-width: 840px;
       margin-left: auto;
       margin-right: auto;
       font-size: clamp(0.98rem, 1.5vw, 1.1rem);
@@ -1045,10 +1040,8 @@
 
       .hero-stats {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 22px 20px;
+        gap: 16px;
       }
-      .hero-stat { padding: 0; }
-      .hero-stat + .hero-stat { border-left: 0; }
 
       .hero-top {
         flex-direction: column;
@@ -1162,7 +1155,7 @@
         color: var(--pm-ink-light);
       }
 
-      .hero-stats {
+      .hero-stat {
         background: var(--pm-white);
         border: 1px solid var(--pm-rule);
         box-shadow: none;
