@@ -908,6 +908,35 @@
       }
     }
 
+    /* Batch 1 — line / time-series entrance. Data lines stroke-draw left->right
+       (JS measures each path and sets stroke-dasharray/offset); end-dots and
+       value labels fade in once the draw finishes. The collapsed/hidden initial
+       state is applied ONLY under the JS-added .anim-armed class, so with no JS
+       the chart renders fully (static fallback intact). */
+    svg[data-anim="line-draw"].anim-armed .anim-draw {
+      transition: stroke-dashoffset 1.1s cubic-bezier(0.33, 0, 0.12, 1);
+    }
+    svg[data-anim="line-draw"].anim-armed .anim-pop {
+      opacity: 0;
+    }
+    svg[data-anim="line-draw"].anim-armed.anim-go .anim-draw {
+      stroke-dashoffset: 0 !important;
+    }
+    svg[data-anim="line-draw"].anim-armed.anim-go .anim-pop {
+      opacity: 1;
+      transition: opacity 0.45s ease-out;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      svg[data-anim="line-draw"] .anim-draw {
+        stroke-dashoffset: 0 !important;
+        transition: none !important;
+      }
+      svg[data-anim="line-draw"] .anim-pop {
+        opacity: 1 !important;
+        transition: none !important;
+      }
+    }
+
     .bot-chart text {
       font-family: var(--pm-font-ui);
     }
@@ -2040,7 +2069,7 @@
           <div class="bot-chart-title">Opposite Directions of Travel</div>
           <div class="bot-chart-subtitle">Monthly crypto share of venue dollars</div>
         </div>
-        <svg class="bot-chart" viewBox="0 0 980 384" xmlns="http://www.w3.org/2000/svg" role="img">
+        <svg class="bot-chart" viewBox="0 0 980 384" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="line-draw">
 <line x1="70" y1="308" x2="910" y2="308" class="grid"/>
 <text x="62" y="312" text-anchor="end" class="axis">0%</text>
 <line x1="70" y1="242" x2="910" y2="242" class="grid"/>
@@ -3066,7 +3095,7 @@
           <div class="bot-chart-title">Inside the Cycle: Volume Erupts at the Close</div>
           <div class="bot-chart-subtitle">Mean Binance BTC spot volume by second into the cycle, still-even vs already-decided, 5- and 15-minute contracts, May 2026</div>
         </div>
-<svg class="bot-chart" viewBox="0 0 980 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 620" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="line-draw">
 <g transform="translate(-17,0)">
 <rect x="338" y="20" width="22" height="4" fill="#b1462e"/><text x="366" y="26" class="legend">still even</text>
 <rect x="540" y="20" width="22" height="4" fill="#9bb9d6"/><text x="568" y="26" class="legend">already-decided</text>
@@ -3246,7 +3275,7 @@
           <div class="bot-chart-title">Inside the Cycle: Price Moves Hardest at the Close</div>
           <div class="bot-chart-subtitle">Mean absolute per-second Binance BTC price move by second into the cycle, still-even vs already-decided, 5- and 15-minute contracts, May 2026</div>
         </div>
-<svg class="bot-chart" viewBox="0 0 980 620" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 620" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="line-draw">
 <g transform="translate(-17,0)">
 <rect x="338" y="20" width="22" height="4" fill="#b1462e"/><text x="366" y="26" class="legend">still even</text>
 <rect x="540" y="20" width="22" height="4" fill="#9bb9d6"/><text x="568" y="26" class="legend">already-decided</text>
@@ -3298,7 +3327,7 @@
           <div class="bot-chart-title">The Price Moves, Then Snaps Back</div>
           <div class="bot-chart-subtitle">Sign-aligned Binance BTC price around the close in still-even cycles, 5- vs 15-minute contracts, May 2026</div>
         </div>
-<svg class="bot-chart" viewBox="0 0 980 400" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 400" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="line-draw" data-stagger="60">
 <line x1="90" y1="256.4" x2="910" y2="256.4" class="grid"/>
 <text x="82" y="260.4" text-anchor="end" class="axis">0.0</text>
 <line x1="90" y1="201.8" x2="910" y2="201.8" class="grid"/>
@@ -3344,7 +3373,7 @@
           <div class="bot-chart-title">Shorter Contracts Lose Wallets Faster</div>
           <div class="bot-chart-subtitle">Share of each weekly signup cohort still trading the same product, by weeks since first trade, pooled across cohorts, Polymarket crypto, Dec. 2025 &ndash; May 2026</div>
         </div>
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="line-draw" data-stagger="120">
 <g transform="translate(251,0)">
 <rect x="70" y="404" width="22" height="4" fill="#214f72"/><text x="98" y="410" class="legend">5-minute</text>
 <rect x="172.0" y="404" width="22" height="4" fill="#6fa1cb"/><text x="200.0" y="410" class="legend">1-hour</text>
@@ -3985,7 +4014,7 @@
           <div class="bot-chart-title">The Wallets Leave, but the Trading Stays</div>
           <div class="bot-chart-subtitle">Same 5-minute signup cohorts, tracked three ways: share of wallets, trades, and dollars retained by weeks since first trade, pooled, Feb. &ndash; May 2026</div>
         </div>
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="line-draw" data-stagger="120">
 <g transform="translate(187,0)">
 <rect x="70" y="404" width="22" height="4" fill="#214f72"/><text x="98" y="410" class="legend">Trades retained</text>
 <rect x="230" y="404" width="22" height="4" fill="#b87d25"/><text x="258" y="410" class="legend">Dollars retained</text>
@@ -4193,6 +4222,78 @@
       io.observe(svg);
     } else {
       reveal();
+    }
+  })();
+  </script>
+  <script>
+  /* Batch 1 engine — line / time-series stroke-draw. For every
+     svg[data-anim="line-draw"], each data polyline (fill="none") is measured and
+     drawn left->right via stroke-dashoffset; multi-line charts cascade by
+     data-stagger ms (ordered by leftmost x). End-dots (top-level circles) and
+     value labels (text.val) fade in after the draw completes. Fires once on
+     scroll-in via IntersectionObserver, then disconnects. prefers-reduced-motion
+     early-returns so nothing is collapsed (final static state). No JS / no
+     IntersectionObserver -> elements never get the anim classes (static fallback). */
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { return; }
+    var DRAW_DUR = 1100; // keep in sync with the CSS .anim-draw transition
+    function firstX(poly) {
+      var pts = (poly.getAttribute('points') || '').trim().split(/[\s,]+/);
+      var x = parseFloat(pts[0]);
+      return isNaN(x) ? 0 : x;
+    }
+    var svgs = document.querySelectorAll('svg[data-anim="line-draw"]');
+    for (var s = 0; s < svgs.length; s++) {
+      (function (svg) {
+        var stagger = parseInt(svg.getAttribute('data-stagger') || '0', 10) || 0;
+        // Data lines: polylines drawn with no fill.
+        var polys = svg.querySelectorAll('polyline');
+        var lines = [];
+        for (var i = 0; i < polys.length; i++) {
+          if ((polys[i].getAttribute('fill') || '') === 'none') { lines.push(polys[i]); }
+        }
+        lines.sort(function (a, b) { return firstX(a) - firstX(b); });
+        for (var j = 0; j < lines.length; j++) {
+          var L = lines[j], len = 0;
+          try { len = L.getTotalLength(); } catch (e) { len = 0; }
+          if (!len) { continue; }
+          L.style.strokeDasharray = len + ' ' + (len + 2);
+          L.style.strokeDashoffset = len;
+          L.style.transitionDelay = (j * stagger) + 'ms';
+          L.classList.add('anim-draw');
+        }
+        // Fade-in (after the draw): top-level data dots + value labels only
+        // (legend markers sit inside <g> groups and are left untouched).
+        var fadeDelay = DRAW_DUR + (lines.length > 1 ? (lines.length - 1) * stagger : 0);
+        var pops = [];
+        var circles = svg.querySelectorAll('circle');
+        for (var c = 0; c < circles.length; c++) {
+          if (circles[c].parentNode === svg) { pops.push(circles[c]); }
+        }
+        var vals = svg.querySelectorAll('text.val');
+        for (var v = 0; v < vals.length; v++) {
+          if (vals[v].parentNode === svg) { pops.push(vals[v]); }
+        }
+        for (var p = 0; p < pops.length; p++) {
+          pops[p].style.transitionDelay = fadeDelay + 'ms';
+          pops[p].classList.add('anim-pop');
+        }
+        if (!lines.length && !pops.length) { return; }
+        svg.classList.add('anim-armed');
+        var done = false;
+        function go() { if (done) { return; } done = true; svg.classList.add('anim-go'); }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            for (var k = 0; k < entries.length; k++) {
+              if (entries[k].isIntersecting) { go(); io.disconnect(); break; }
+            }
+          }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+          io.observe(svg);
+        } else {
+          go();
+        }
+      })(svgs[s]);
     }
   })();
   </script>
