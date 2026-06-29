@@ -1530,6 +1530,10 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 1px 0 rgba(20, 18, 38, 0), 0 8px 24px -16px rgba(20, 18, 38, 0);
+      transition: box-shadow 0.22s ease;
+    }
+    .site-masthead.is-stuck {
       box-shadow: 0 1px 0 rgba(20, 18, 38, 0.08), 0 8px 24px -16px rgba(20, 18, 38, 0.35);
     }
     .masthead-inner {
@@ -1692,6 +1696,7 @@
   </style>
 </head>
 <body>
+  <div id="masthead-sentinel" aria-hidden="true" style="position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;"></div>
   <div class="site-masthead">
     <div class="masthead-inner">
       <a class="masthead-brand" href="https://panteraresearchlab.xyz/" target="_blank" rel="noopener noreferrer">
@@ -4775,6 +4780,23 @@
           io.observe(carousel);
         } else { fireActive(); }
       })(carousels[c]);
+    }
+  })();
+  </script>
+  <script>
+  /* Masthead divider: borderless at scroll-top 0, divider/shadow appears once stuck. */
+  (function () {
+    var masthead = document.querySelector('.site-masthead');
+    var sentinel = document.getElementById('masthead-sentinel');
+    if (!masthead || !sentinel) return;
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        // Sentinel sits at the very top of the page. While it is in view we are at
+        // scroll-top (masthead not yet stuck) -> borderless; once it scrolls out,
+        // the masthead is stuck -> show the divider/shadow.
+        masthead.classList.toggle('is-stuck', !entries[0].isIntersecting);
+      }, { threshold: 0 });
+      io.observe(sentinel);
     }
   })();
   </script>
