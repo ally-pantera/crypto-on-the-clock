@@ -4268,7 +4268,7 @@
         for (var j = 0; j < entries.length; j++) {
           if (entries[j].isIntersecting) { reveal(); io.disconnect(); break; }
         }
-      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      }, { threshold: 0, rootMargin: '0px 0px -30% 0px' });
       io.observe(svg);
     } else {
       reveal();
@@ -4338,7 +4338,7 @@
             for (var k = 0; k < entries.length; k++) {
               if (entries[k].isIntersecting) { go(); io.disconnect(); break; }
             }
-          }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+          }, { threshold: 0, rootMargin: '0px 0px -30% 0px' });
           io.observe(svg);
         } else {
           go();
@@ -4450,7 +4450,7 @@
             for (var k = 0; k < entries.length; k++) {
               if (entries[k].isIntersecting) { go(svg); io.disconnect(); break; }
             }
-          }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+          }, { threshold: 0, rootMargin: '0px 0px -30% 0px' });
           io.observe(svg);
         } else {
           go(svg);
