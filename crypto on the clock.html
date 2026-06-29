@@ -1206,14 +1206,13 @@
       }
     }
 
-    /* Site masthead — Pantera Research Lab top bar (dark bookend above the hero) */
+    /* Site masthead — Pantera Research Lab top bar (light, matches reference article header) */
     .site-masthead {
       width: 100%;
       max-width: 100%;
       overflow-x: clip;
-      background: var(--pm-ink);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-      padding: 0 24px;
+      background: #ffffff;
+      padding: 0 32px;
     }
     .masthead-inner {
       width: 100%;
@@ -1223,48 +1222,63 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px 40px;
+      gap: 18px 40px;
       flex-wrap: wrap;
-      padding: 16px 0;
+      padding: 28px 0;
     }
     .masthead-brand {
       display: flex;
-      flex-direction: column;
-      gap: 3px;
+      align-items: center;
+      gap: 20px;
       text-decoration: none;
     }
+    .masthead-logo {
+      width: 66px;
+      height: 66px;
+      flex: none;
+      display: block;
+      border-radius: 2px;
+    }
+    .masthead-brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
     .masthead-name {
-      font-family: var(--pm-font-ui);
-      font-size: 1.12rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #cbbcff;
+      font-family: var(--pm-font-display);
+      font-size: 1.7rem;
+      font-weight: 600;
+      letter-spacing: 0.005em;
+      color: var(--pm-ink);
+      line-height: 1;
     }
     .masthead-tag {
-      font-family: var(--pm-font-ui);
-      font-size: 12.5px;
-      font-style: italic;
-      color: rgba(255, 255, 255, 0.6);
+      font-family: var(--pm-font-body);
+      font-size: 14px;
+      color: var(--pm-ink-mid);
     }
     .masthead-nav {
       display: flex;
       align-items: center;
-      gap: 26px;
+      gap: 30px;
       flex-wrap: wrap;
     }
     .masthead-nav a {
       font-family: var(--pm-font-ui);
-      font-size: 14px;
-      letter-spacing: 0.02em;
-      color: rgba(255, 255, 255, 0.82);
+      font-size: 16px;
+      letter-spacing: 0.01em;
+      color: var(--pm-ink);
       text-decoration: none;
       transition: color 0.14s ease;
     }
-    .masthead-nav a:hover { color: #cbbcff; }
+    .masthead-nav a:hover { color: var(--pm-accent); }
     @media (max-width: 640px) {
-      .masthead-inner { padding: 14px 0; }
-      .masthead-nav { gap: 16px; }
+      .site-masthead { padding: 0 20px; }
+      .masthead-inner { padding: 20px 0; gap: 14px 28px; }
+      .masthead-name { font-size: 1.4rem; }
+      .masthead-logo { width: 54px; height: 54px; }
+      .masthead-nav { gap: 18px; }
+      .masthead-nav a { font-size: 15px; }
     }
 
     /* Report footer — dark bookend matching the hero treatment */
@@ -1362,8 +1376,11 @@
   <div class="site-masthead">
     <div class="masthead-inner">
       <a class="masthead-brand" href="https://panteraresearchlab.xyz/" target="_blank" rel="noopener noreferrer">
-        <span class="masthead-name">Pantera Research Lab</span>
-        <span class="masthead-tag">Charting new frontiers through data-driven research.</span>
+        <img class="masthead-logo" src="data:image/webp;base64,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" alt="Pantera Research Lab logo">
+        <span class="masthead-brand-text">
+          <span class="masthead-name">Pantera Research Lab</span>
+          <span class="masthead-tag">Charting new frontiers through data-driven research.</span>
+        </span>
       </a>
       <nav class="masthead-nav" aria-label="Pantera Research Lab">
         <a href="https://panteraresearchlab.xyz/data/" target="_blank" rel="noopener noreferrer">Data</a>
