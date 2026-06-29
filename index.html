@@ -79,6 +79,72 @@
       min-width: 0;
     }
 
+    .surf-attribution {
+      width: 100%;
+      max-width: var(--pm-wide);
+      margin: 8px auto 4px;
+    }
+
+    .surf-attribution__box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 22px 26px;
+      border-radius: 14px;
+      border: 1px solid rgba(80, 64, 176, 0.22);
+      border-left: 4px solid var(--pm-accent);
+      background:
+        linear-gradient(180deg, rgba(80, 64, 176, 0.07), rgba(80, 64, 176, 0.045)),
+        var(--pm-accent-soft);
+      box-shadow: 0 1px 2px rgba(80, 64, 176, 0.06);
+    }
+
+    .surf-attribution__mark {
+      flex: 0 0 auto;
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--pm-font-ui);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--pm-white);
+      background: var(--pm-accent);
+      box-shadow: 0 1px 2px rgba(80, 64, 176, 0.3);
+    }
+
+    .surf-attribution__text {
+      margin: 0;
+      font-family: var(--pm-font-body);
+      font-size: 1.02rem;
+      line-height: 1.5;
+      color: var(--pm-ink-mid);
+    }
+
+    .surf-attribution__text a {
+      color: var(--pm-accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(80, 64, 176, 0.4);
+      transition: border-color 0.18s ease, color 0.18s ease;
+    }
+
+    .surf-attribution__text a:hover {
+      color: #3d3196;
+      border-bottom-color: var(--pm-accent);
+    }
+
+    @media (max-width: 640px) {
+      .surf-attribution__box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 20px;
+      }
+    }
+
     .hero-top {
       display: flex;
       justify-content: space-between;
@@ -4274,6 +4340,13 @@
       <p><strong>How durable is Polymarket&rsquo;s bot-driven core?</strong> A minority of bot-like wallets accounts for most 5-minute trading, even as new-wallet cohorts shrink. The open question is whether that automated core remains stable as fees, rebates, and market structure change, and whether the product can broaden beyond it.</p>
       <p><strong>Can the settlement footprint be tied to specific positions?</strong> Binance trading repeatedly intensifies around Polymarket settlement windows when the outcome remains in play, but the current analysis cannot connect Binance accounts to Polymarket wallets or show that the Chainlink benchmark was moved. Linking cross-venue positions, timing, and benchmark changes is the natural next test.</p>
     </section>
+
+    <aside class="surf-attribution">
+      <div class="surf-attribution__box">
+        <div class="surf-attribution__mark" aria-hidden="true">S</div>
+        <p class="surf-attribution__text">The data in this report was assembled using <a href="https://asksurf.ai" target="_blank" rel="noopener">asksurf.ai</a> &mdash; a skill and API for Surf. <a href="https://asksurf.ai" target="_blank" rel="noopener">Learn more</a>.</p>
+      </div>
+    </aside>
 
     </div>
   </main>
