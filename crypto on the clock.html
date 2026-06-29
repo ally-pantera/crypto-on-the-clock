@@ -984,6 +984,109 @@
       }
     }
 
+    /* Batch 3 — area / distribution / combo / flow entrances. Four modes on the
+       same scroll-in harness. The collapsed/hidden initial state is applied ONLY
+       under the JS-added .anim-armed class, so with no JS each chart renders
+       fully (static fallback intact). transform-box: view-box anchors scale
+       origins to SVG user units (baseline / centerline set inline by JS). */
+
+    /* area-wipe: stacked-area bands reveal left->right via an animated inset
+       clip; grid/axes/legend stay static. */
+    svg[data-anim="area-wipe"].anim-armed .anim-wipe {
+      clip-path: inset(0 100% 0 0);
+    }
+    svg[data-anim="area-wipe"].anim-armed.anim-go .anim-wipe {
+      clip-path: inset(0 0 0 0);
+      transition: clip-path 1.05s cubic-bezier(0.33, 0, 0.12, 1);
+    }
+
+    /* violin-expand: density shapes bloom outward from their centerline
+       (scaleY about each shape's bbox center); box/whisker/dots/labels fade
+       in once the shapes finish expanding. */
+    svg[data-anim="violin-expand"].anim-armed .anim-expand {
+      transform-box: view-box;
+      transform: scaleY(0);
+    }
+    svg[data-anim="violin-expand"].anim-armed.anim-go .anim-expand {
+      transform: scaleY(1);
+      transition: transform 0.75s cubic-bezier(0.22, 1.0, 0.36, 1);
+    }
+    svg[data-anim="violin-expand"].anim-armed .anim-pop {
+      opacity: 0;
+    }
+    svg[data-anim="violin-expand"].anim-armed.anim-go .anim-pop {
+      opacity: 1;
+      transition: opacity 0.5s ease-out;
+    }
+
+    /* combo: area/bars rise from a baseline (scaleY), then data polylines
+       stroke-draw over them, then line dots fade in. */
+    svg[data-anim="combo"].anim-armed .anim-grow {
+      transform-box: view-box;
+      transform: scaleY(0);
+    }
+    svg[data-anim="combo"].anim-armed.anim-go .anim-grow {
+      transform: scaleY(1);
+      transition: transform 0.6s cubic-bezier(0.20, 1.05, 0.40, 1);
+    }
+    svg[data-anim="combo"].anim-armed .anim-draw {
+      transition: stroke-dashoffset 1.0s cubic-bezier(0.33, 0, 0.12, 1);
+    }
+    svg[data-anim="combo"].anim-armed.anim-go .anim-draw {
+      stroke-dashoffset: 0 !important;
+    }
+    svg[data-anim="combo"].anim-armed .anim-pop {
+      opacity: 0;
+    }
+    svg[data-anim="combo"].anim-armed.anim-go .anim-pop {
+      opacity: 1;
+      transition: opacity 0.45s ease-out;
+    }
+
+    /* flow-in: rows fade + scale-in in reading order (top->down by y). Rects
+       carry the scale pop; labels fade. */
+    svg[data-anim="flow-in"].anim-armed .anim-cell {
+      opacity: 0;
+    }
+    svg[data-anim="flow-in"].anim-armed .anim-cell.anim-scale {
+      transform-box: fill-box;
+      transform-origin: center;
+      transform: scale(0.88);
+    }
+    svg[data-anim="flow-in"].anim-armed.anim-go .anim-cell {
+      opacity: 1;
+      transition: opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.22, 1.0, 0.36, 1);
+    }
+    svg[data-anim="flow-in"].anim-armed.anim-go .anim-cell.anim-scale {
+      transform: scale(1);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      svg[data-anim="area-wipe"] .anim-wipe {
+        clip-path: none !important;
+        transition: none !important;
+      }
+      svg[data-anim="violin-expand"] .anim-expand,
+      svg[data-anim="combo"] .anim-grow {
+        transform: none !important;
+        transition: none !important;
+      }
+      svg[data-anim="combo"] .anim-draw {
+        stroke-dashoffset: 0 !important;
+        transition: none !important;
+      }
+      svg[data-anim="violin-expand"] .anim-pop,
+      svg[data-anim="combo"] .anim-pop {
+        opacity: 1 !important;
+        transition: none !important;
+      }
+      svg[data-anim="flow-in"] .anim-cell {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+
     .bot-chart text {
       font-family: var(--pm-font-ui);
     }
@@ -2186,7 +2289,7 @@
         </div>
         <div class="bot-carousel-slides">
         <div class="bot-carousel-slide is-active" data-title="Short-Term Is the Whole Game on Both Venues" data-subtitle="Weekly crypto market volume by contract length" data-caplabel="By duration" data-captext="Kalshi clusters in 15-minute and hourly contracts; Polymarket in 5- and 15-minute plus a longer / price-target tail. Weekly, volume-weighted (Polymarket one-sided USD; Kalshi USD traded), Jan.–May 2026.">
-<svg class="bot-chart" viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="area-wipe">
 <text x="12" y="26" class="axis-strong">Kalshi</text>
 <line x1="130" y1="300" x2="915" y2="300" class="grid"/>
 <text x="122" y="304" text-anchor="end" class="axis">$0M</text>
@@ -2243,7 +2346,7 @@
 </svg>
         </div>
 <div class="bot-carousel-slide" data-title="Crypto volume by asset, week by week" data-subtitle="WEEKLY CRYPTO VOLUME BY ASSET, KALSHI (TOP) AND POLYMARKET (BOTTOM), JAN. THROUGH MAY 2026" data-caplabel="By asset" data-captext="Kalshi crypto is almost entirely Bitcoin; Polymarket carries a visible ETH/SOL/XRP tail on top of BTC. Weekly, volume-weighted, Jan.–May 2026.">
-<svg class="bot-chart" viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 700" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="area-wipe">
 <text x="12" y="42" class="axis-strong">Kalshi</text>
 <line x1="130" y1="280.0" x2="915" y2="280.0" class="grid"/>
 <text x="122" y="284.0" text-anchor="end" class="axis">$0</text>
@@ -2338,7 +2441,7 @@
           <div class="bot-chart-title">Both Tapes Trade Small, But Kalshi Runs Larger</div>
           <div class="bot-chart-subtitle">Distribution of every crypto trade by venue, full tape, on a log dollar scale</div>
         </div>
-<svg class="bot-chart" viewBox="0 24 980 444" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Polymarket and Kalshi trade-size violins on a USD log scale">
+<svg class="bot-chart" viewBox="0 24 980 444" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="violin-expand" aria-label="Polymarket and Kalshi trade-size violins on a USD log scale">
 <line x1="120" y1="380" x2="900" y2="380" class="grid"/>
 <line x1="157.0" y1="84" x2="157.0" y2="380" class="grid"/>
 <text x="157.0" y="410" text-anchor="middle" class="axis">$0.01</text>
@@ -2418,7 +2521,7 @@
             <div class="bot-chart-title">Polymarket Crypto Volume and Observed Fees</div>
             <div class="bot-chart-subtitle">Weekly crypto volume and observed per-fill fees</div>
           </div>
-<svg class="bot-chart" viewBox="0 0 980 408" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 408" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="combo" data-baseline="330">
 <defs><linearGradient id="volGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7fa9d0" stop-opacity="0.5"/><stop offset="100%" stop-color="#cfe0ee" stop-opacity="0.1"/></linearGradient></defs>
 <line x1="70" y1="330" x2="850" y2="330" class="grid"/>
 <text x="62" y="334" text-anchor="end" class="axis" fill="#2f6f9f">$0M</text>
@@ -2909,7 +3012,7 @@
         </div>
         <div class="bot-carousel-slides">
         <div class="bot-carousel-slide is-active" data-title="Bot-Like Wallets Serving Bot-Like Wallets" data-subtitle="5-minute volume by trader type on each side of the trade, Feb.&ndash;May 28, 2026" data-caplabel="Counterparty mix" data-captext="Both sides of every 5-minute trade classified with the grouping rules. Only 1.4% of volume (0.5% of trades) has no bot-classified wallet on either side.">
-<svg class="bot-chart" viewBox="0 0 980 290" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 290" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="flow-in">
 <line x1="200" y1="10" x2="200" y2="246" class="grid"/>
 <text x="200" y="268" text-anchor="middle" class="axis">0%</text>
 <line x1="324" y1="10" x2="324" y2="246" class="grid"/>
@@ -2945,7 +3048,7 @@
 </svg>
 </div>
 <div class="bot-carousel-slide" data-title="The Human Share Grows With the Horizon" data-subtitle="Bot involvement in volume by product duration, Jan. 1 through May 28, 2026; 5-minute slice begins Feb. 12" data-caplabel="Bot involvement by duration" data-captext="Bot-to-bot volume collapses as the product slows, and fully human volume grows from almost nothing in 5-minute to roughly two-fifths of volume beyond 4h.">
-<svg class="bot-chart" viewBox="0 0 980 390" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 390" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="flow-in">
 <line x1="200" y1="10" x2="200" y2="346" class="grid"/>
 <text x="200" y="368" text-anchor="middle" class="axis">0%</text>
 <line x1="324" y1="10" x2="324" y2="346" class="grid"/>
@@ -3003,7 +3106,7 @@
 </svg>
 </div>
 <div class="bot-carousel-slide" data-title="The Short-Horizon Ladder Shares the Signature" data-subtitle="Same behavioral cuts across 5-minute, 15-minute, 1-hour, 4-hour, &gt;4-hour takers, Jan. 1 through May 28, 2026; 5-minute slice begins Feb. 12" data-caplabel="Ladder comparison" data-captext="The sub-second share thins down the intraday ladder, which is what an automation story predicts. The >4-hour row aggregates every market longer than four hours (daily and beyond); its sub-second share stays high because large bot-paced takers trade long markets too, just with far bigger tickets.">
-<svg class="bot-chart" viewBox="0 0 980 390" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 390" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="flow-in">
 <line x1="200" y1="10" x2="200" y2="346" class="grid"/>
 <text x="200" y="368" text-anchor="middle" class="axis">0%</text>
 <line x1="324" y1="10" x2="324" y2="346" class="grid"/>
@@ -3525,7 +3628,7 @@
         </div>
         <div class="bot-carousel-slides">
         <div class="bot-carousel-slide is-active" data-title="The 5-Minute Funnel Is Shrinking" data-subtitle="Weekly 5-minute signup cohorts and per-cohort wallet retention, Feb. 9&ndash;May 18, 2026" data-caplabel="Cohort funnel" data-captext="Bars are new 5-minute wallets per cohort week; lines are each cohort&rsquo;s week-1 and week-4 wallet retention. Inflow falls 69.5% from the Feb. 9 cohort to May 18. Retention points are only drawn where the full observation week fits inside the coverage window.">
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="combo" data-baseline="330" data-stagger="30">
 <rect x="200" y="406" width="13" height="13" fill="#c5d7e4"/>
 <text x="220" y="417" class="legend">New 5m wallets (cohort size)</text>
 <rect x="456" y="411" width="22" height="4" fill="#214f72"/>
@@ -3613,7 +3716,7 @@
 </svg>
 </div>
 <div class="bot-carousel-slide" data-title="15m Cohorts: The Same Shrinking Funnel" data-subtitle="Weekly 15m signup cohorts and per-cohort wallet retention, Dec. 29, 2025 through May 18, 2026" data-caplabel="Cohort funnel" data-captext="Bars are new 15m wallets per cohort week; lines are each cohort&rsquo;s week-1 and week-4 wallet retention. Inflow falls 82.1% from the Dec 29 cohort to May 18. Retention points are only drawn where the full observation week fits inside the coverage window.">
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="combo" data-baseline="330" data-stagger="30">
 <rect x="200" y="406" width="13" height="13" fill="#c5d7e4"/>
 <text x="220" y="417" class="legend">New 15m wallets (cohort size)</text>
 <rect x="456" y="411" width="22" height="4" fill="#214f72"/>
@@ -3714,7 +3817,7 @@
 </svg>
 </div>
 <div class="bot-carousel-slide" data-title="1h Cohorts: Smaller, Same Shape" data-subtitle="Weekly 1h signup cohorts and per-cohort wallet retention, Dec. 29, 2025 through May 18, 2026" data-caplabel="Cohort funnel" data-captext="Bars are new 1h wallets per cohort week; lines are each cohort&rsquo;s week-1 and week-4 wallet retention. Inflow falls 79.4% from the Dec 29 cohort to May 18. Retention points are only drawn where the full observation week fits inside the coverage window.">
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="combo" data-baseline="330" data-stagger="30">
 <rect x="200" y="406" width="13" height="13" fill="#c5d7e4"/>
 <text x="220" y="417" class="legend">New 1h wallets (cohort size)</text>
 <rect x="456" y="411" width="22" height="4" fill="#214f72"/>
@@ -3815,7 +3918,7 @@
 </svg>
 </div>
 <div class="bot-carousel-slide" data-title="4h Cohorts: A Thin Funnel" data-subtitle="Weekly 4h signup cohorts and per-cohort wallet retention, Dec. 29, 2025 through May 18, 2026" data-caplabel="Cohort funnel" data-captext="Bars are new 4h wallets per cohort week; lines are each cohort&rsquo;s week-1 and week-4 wallet retention. Inflow falls 53.3% from the Dec 29 cohort to May 18. Retention points are only drawn where the full observation week fits inside the coverage window.">
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="combo" data-baseline="330" data-stagger="30">
 <rect x="200" y="406" width="13" height="13" fill="#c5d7e4"/>
 <text x="220" y="417" class="legend">New 4h wallets (cohort size)</text>
 <rect x="456" y="411" width="22" height="4" fill="#214f72"/>
@@ -3916,7 +4019,7 @@
 </svg>
 </div>
 <div class="bot-carousel-slide" data-title="Weekly Cohorts: The Human-Paced Contrast" data-subtitle="Weekly weekly signup cohorts and per-cohort wallet retention, Dec. 29, 2025 through May 18, 2026" data-caplabel="Cohort funnel" data-captext="Bars are new weekly wallets per cohort week; lines are each cohort&rsquo;s week-1 and week-4 wallet retention. Inflow falls 96.7% from the Dec 29 cohort to May 18. Retention points are only drawn where the full observation week fits inside the coverage window. Week-one retention here runs near 80.7%, far above 5m's 52.7%.">
-<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" viewBox="0 0 980 430" xmlns="http://www.w3.org/2000/svg" role="img" data-anim="combo" data-baseline="330" data-stagger="30">
 <rect x="200" y="406" width="13" height="13" fill="#c5d7e4"/>
 <text x="220" y="417" class="legend">New weekly wallets (cohort size)</text>
 <rect x="456" y="411" width="22" height="4" fill="#214f72"/>
@@ -4473,6 +4576,205 @@
           }).observe(slide, { attributes: true, attributeFilter: ['class'] });
         })(slides[j]);
       }
+    }
+  })();
+  </script>
+  <script>
+  /* Batch 3 engine — area / distribution / combo / flow entrances. Four modes on
+     the same scroll-in harness:
+       area-wipe      -> stacked-area bands reveal L->R via an animated inset clip.
+       violin-expand  -> density polygons bloom outward from their centerline
+                         (scaleY about each shape's bbox center); box/whisker/
+                         dots/labels fade in after.
+       combo          -> area/bars rise from data-baseline (scaleY), then data
+                         polylines stroke-draw over them, then line dots fade.
+       flow-in        -> rows fade + scale-in in reading order (top->down by y).
+     Standalone charts fire once on scroll-in via IntersectionObserver. Carousel
+     slides (#crypto-breakdown-carousel, #counterparty-carousel,
+     #cohort-funnel-carousel) re-arm and replay whenever a slide becomes active;
+     combo draw-lines are re-measured on replay since getTotalLength is 0 while a
+     slide is display:none. prefers-reduced-motion early-returns (final static
+     state); no JS -> no anim classes (static fallback intact). */
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { return; }
+
+    var GROW_DUR = 600, DRAW_DUR = 1000, DRAW_START = GROW_DUR + 60;
+    function num(el, a) { var v = parseFloat(el.getAttribute(a)); return isNaN(v) ? 0 : v; }
+    function bboxCenterY(el) {
+      try { var b = el.getBBox(); return b.y + b.height / 2; } catch (e) { return 0; }
+    }
+
+    function prepArea(svg) {
+      var polys = svg.querySelectorAll('polygon');
+      for (var i = 0; i < polys.length; i++) { polys[i].classList.add('anim-wipe'); }
+      return polys.length;
+    }
+
+    function prepViolin(svg) {
+      var polys = svg.querySelectorAll('polygon'), i;
+      for (i = 0; i < polys.length; i++) {
+        polys[i].style.transformOrigin = '0px ' + bboxCenterY(polys[i]) + 'px';
+        polys[i].classList.add('anim-expand');
+      }
+      // Overlays (box / whisker / median / leaders / dots / labels) fade in
+      // after the density shapes finish expanding; grid lines stay static.
+      var pops = svg.querySelectorAll('circle, rect, line:not(.grid), text.val');
+      for (i = 0; i < pops.length; i++) {
+        pops[i].style.transitionDelay = (GROW_DUR + 150) + 'ms';
+        pops[i].classList.add('anim-pop');
+      }
+      return polys.length;
+    }
+
+    // Measure + tag combo draw-lines (fill="none" polylines). Re-run on replay
+    // so hidden slides (length 0 at load) get correct dasharray once visible.
+    function setupComboLines(svg) {
+      var polys = svg.querySelectorAll('polyline'), i;
+      for (i = 0; i < polys.length; i++) {
+        var L = polys[i];
+        if ((L.getAttribute('fill') || '') !== 'none') { continue; }
+        var len = 0;
+        try { len = L.getTotalLength(); } catch (e) { len = 0; }
+        if (!len) { continue; }
+        L.style.strokeDasharray = len + ' ' + (len + 2);
+        L.style.strokeDashoffset = len;
+        L.style.transitionDelay = DRAW_START + 'ms';
+        L.classList.add('anim-draw');
+      }
+    }
+
+    function prepCombo(svg) {
+      var baseline = num(svg, 'data-baseline');
+      var stagger = parseInt(svg.getAttribute('data-stagger') || '0', 10) || 0;
+      // Grow shapes: area polygons + bar rects (>=30 wide; skips legend swatches).
+      var grows = [], i;
+      var polys = svg.querySelectorAll('polygon');
+      for (i = 0; i < polys.length; i++) { grows.push(polys[i]); }
+      var rects = svg.querySelectorAll('rect');
+      for (i = 0; i < rects.length; i++) { if (num(rects[i], 'width') >= 30) { grows.push(rects[i]); } }
+      var keys = [];
+      for (i = 0; i < grows.length; i++) {
+        grows[i].__kx = num(grows[i], 'x');
+        if (keys.indexOf(grows[i].__kx) === -1) { keys.push(grows[i].__kx); }
+      }
+      keys.sort(function (a, b) { return a - b; });
+      for (i = 0; i < grows.length; i++) {
+        grows[i].style.transformOrigin = '0px ' + baseline + 'px';
+        grows[i].style.transitionDelay = (keys.indexOf(grows[i].__kx) * stagger) + 'ms';
+        grows[i].classList.add('anim-grow');
+      }
+      setupComboLines(svg);
+      // Line dots (top-level circles) fade in after the draw completes.
+      var fadeDelay = DRAW_START + DRAW_DUR;
+      var circles = svg.querySelectorAll('circle');
+      for (i = 0; i < circles.length; i++) {
+        if (circles[i].parentNode === svg) {
+          circles[i].style.transitionDelay = fadeDelay + 'ms';
+          circles[i].classList.add('anim-pop');
+        }
+      }
+      return grows.length;
+    }
+
+    function prepFlow(svg) {
+      // Rows fade + scale-in top->down; stagger by y band so each row resolves
+      // in reading order. Rects carry the scale pop; data labels fade.
+      var rects = svg.querySelectorAll('rect'), texts = svg.querySelectorAll('text');
+      var els = [], i;
+      for (i = 0; i < rects.length; i++) { if (num(rects[i], 'height') >= 14) { els.push(rects[i]); } }
+      for (i = 0; i < texts.length; i++) {
+        var t = texts[i];
+        if (t.classList.contains('val') || t.classList.contains('note') || t.classList.contains('axis-strong')) { els.push(t); }
+      }
+      if (!els.length) { return 0; }
+      var bands = [];
+      for (i = 0; i < els.length; i++) {
+        els[i].__kb = Math.round(num(els[i], 'y') / 55);
+        if (bands.indexOf(els[i].__kb) === -1) { bands.push(els[i].__kb); }
+      }
+      bands.sort(function (a, b) { return a - b; });
+      for (i = 0; i < els.length; i++) {
+        els[i].style.transitionDelay = (bands.indexOf(els[i].__kb) * 70) + 'ms';
+        els[i].classList.add('anim-cell');
+        if (els[i].tagName.toLowerCase() === 'rect') { els[i].classList.add('anim-scale'); }
+      }
+      return els.length;
+    }
+
+    var PREP = { 'area-wipe': prepArea, 'violin-expand': prepViolin, 'combo': prepCombo, 'flow-in': prepFlow };
+
+    function arm(svg) {
+      var fn = PREP[svg.getAttribute('data-anim')];
+      if (!fn) { return false; }
+      if (!svg.__b3prepared) { svg.__b3prepared = true; svg.__b3count = fn(svg); }
+      if (!svg.__b3count) { return false; }
+      svg.classList.add('anim-armed');
+      return true;
+    }
+    function go(svg) {
+      if (!svg.classList.contains('anim-armed')) { return; }
+      void svg.getBoundingClientRect();
+      svg.classList.add('anim-go');
+    }
+    function replay(svg) {
+      if (!svg.classList.contains('anim-armed')) { if (!arm(svg)) { return; } }
+      // Re-measure combo draw-lines now the slide is visible (length may have
+      // been 0 while the slide was display:none at load). Runs in the same
+      // microtask as the activation, before paint, so no full-line flash.
+      if (svg.getAttribute('data-anim') === 'combo') { setupComboLines(svg); }
+      svg.classList.remove('anim-go');
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { go(svg); });
+      });
+    }
+
+    // Standalone charts (#4 violin, #5 combo): per-svg scroll-in trigger.
+    var svgs = document.querySelectorAll('svg[data-anim="area-wipe"], svg[data-anim="violin-expand"], svg[data-anim="combo"], svg[data-anim="flow-in"]');
+    for (var s = 0; s < svgs.length; s++) {
+      (function (svg) {
+        if (svg.closest('.bot-carousel-slide')) { return; } // handled by carousel logic
+        if (!arm(svg)) { return; }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            for (var k = 0; k < entries.length; k++) {
+              if (entries[k].isIntersecting) { go(svg); io.disconnect(); break; }
+            }
+          }, { threshold: 0, rootMargin: '0px 0px -30% 0px' });
+          io.observe(svg);
+        } else { go(svg); }
+      })(svgs[s]);
+    }
+
+    // Carousels: pre-arm every slide, replay on activation, and fire the active
+    // slide once on scroll-in of the carousel.
+    var carousels = document.querySelectorAll('#crypto-breakdown-carousel, #counterparty-carousel, #cohort-funnel-carousel');
+    for (var c = 0; c < carousels.length; c++) {
+      (function (carousel) {
+        var slides = carousel.querySelectorAll('.bot-carousel-slide');
+        for (var j = 0; j < slides.length; j++) {
+          (function (slide) {
+            var svg = slide.querySelector('svg[data-anim]');
+            if (!svg) { return; }
+            arm(svg);
+            new MutationObserver(function () {
+              if (slide.classList.contains('is-active')) { replay(svg); }
+            }).observe(slide, { attributes: true, attributeFilter: ['class'] });
+          })(slides[j]);
+        }
+        function fireActive() {
+          var act = carousel.querySelector('.bot-carousel-slide.is-active svg[data-anim]');
+          if (act) { replay(act); }
+        }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            for (var k = 0; k < entries.length; k++) {
+              if (entries[k].isIntersecting) { fireActive(); io.disconnect(); break; }
+            }
+          }, { threshold: 0, rootMargin: '0px 0px -30% 0px' });
+          io.observe(carousel);
+        } else { fireActive(); }
+      })(carousels[c]);
     }
   })();
   </script>
