@@ -1206,6 +1206,67 @@
       }
     }
 
+    /* Site masthead — Pantera Research Lab top bar (dark bookend above the hero) */
+    .site-masthead {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+      background: var(--pm-ink);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+      padding: 0 24px;
+    }
+    .masthead-inner {
+      width: 100%;
+      max-width: var(--pm-wide);
+      margin: 0 auto;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px 40px;
+      flex-wrap: wrap;
+      padding: 16px 0;
+    }
+    .masthead-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      text-decoration: none;
+    }
+    .masthead-name {
+      font-family: var(--pm-font-ui);
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #cbbcff;
+    }
+    .masthead-tag {
+      font-family: var(--pm-font-ui);
+      font-size: 12.5px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .masthead-nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      flex-wrap: wrap;
+    }
+    .masthead-nav a {
+      font-family: var(--pm-font-ui);
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.82);
+      text-decoration: none;
+      transition: color 0.14s ease;
+    }
+    .masthead-nav a:hover { color: #cbbcff; }
+    @media (max-width: 640px) {
+      .masthead-inner { padding: 14px 0; }
+      .masthead-nav { gap: 16px; }
+    }
+
     /* Report footer — dark bookend matching the hero treatment */
     .report-footer {
       width: 100%;
@@ -1298,6 +1359,22 @@
   </style>
 </head>
 <body>
+  <div class="site-masthead">
+    <div class="masthead-inner">
+      <a class="masthead-brand" href="https://panteraresearchlab.xyz/" target="_blank" rel="noopener noreferrer">
+        <span class="masthead-name">Pantera Research Lab</span>
+        <span class="masthead-tag">Charting new frontiers through data-driven research.</span>
+      </a>
+      <nav class="masthead-nav" aria-label="Pantera Research Lab">
+        <a href="https://panteraresearchlab.xyz/data/" target="_blank" rel="noopener noreferrer">Data</a>
+        <a href="https://panteraresearchlab.xyz/research/" target="_blank" rel="noopener noreferrer">Research</a>
+        <a href="https://panteraresearchlab.xyz/catalyze/" target="_blank" rel="noopener noreferrer">Catalyze</a>
+        <a href="https://panteracapital.com/" target="_blank" rel="noopener noreferrer">Pantera Capital</a>
+        <a href="https://panteraresearchlab.xyz/about/" target="_blank" rel="noopener noreferrer">About</a>
+      </nav>
+    </div>
+  </div>
+
   <header class="report-hero">
     <div class="hero-inner">
       <div class="hero-top">
