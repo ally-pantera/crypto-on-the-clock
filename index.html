@@ -884,6 +884,30 @@
       stroke-width: 1;
     }
 
+    /* Entrance animation — prototype, scoped to the category-volume chart only.
+       Bars grow up from each panel's baseline, staggered left->right, once on
+       scroll-in. transform-box: view-box anchors transform-origin to SVG user
+       units (the per-panel baseline is set inline by JS). */
+    #cat-volume-chart .bar-rise {
+      transform-box: view-box;
+      transform: scaleY(0);
+      opacity: 0.55;
+    }
+    #cat-volume-chart.is-animating .bar-rise {
+      transition: transform 0.72s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.5s ease-out;
+    }
+    #cat-volume-chart.is-revealed .bar-rise {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #cat-volume-chart .bar-rise {
+        transform: none !important;
+        opacity: 1 !important;
+        transition: none !important;
+      }
+    }
+
     .bot-chart text {
       font-family: var(--pm-font-ui);
     }
@@ -1621,7 +1645,7 @@
           <div class="bot-chart-title">Two Venues, Two Different Mixes</div>
           <div class="bot-chart-subtitle">Weekly volume by category</div>
         </div>
-<svg class="bot-chart" viewBox="0 0 980 724" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg class="bot-chart" id="cat-volume-chart" viewBox="0 0 980 724" xmlns="http://www.w3.org/2000/svg" role="img">
 <text x="24" y="32" class="axis-strong">Kalshi</text>
 <line x1="92" y1="300.0" x2="920" y2="300.0" class="grid"/>
 <text x="84" y="304.0" text-anchor="end" class="axis">$0B</text>
@@ -4122,6 +4146,54 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
     update();
+  })();
+  </script>
+  <script>
+  /* Category-volume chart entrance animation (PROTOTYPE — this chart only).
+     Bars grow up from their panel baseline, staggered left->right, once, when
+     the chart scrolls into view. Respects prefers-reduced-motion (final state,
+     no motion). If JS or IntersectionObserver is unavailable, bars never get the
+     .bar-rise class and render fully (static fallback intact). */
+  (function () {
+    var svg = document.getElementById('cat-volume-chart');
+    if (!svg) { return; }
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { return; }
+
+    var rects = svg.querySelectorAll('rect');
+    var bars = [];
+    for (var i = 0; i < rects.length; i++) {
+      var r = rects[i];
+      var w = parseFloat(r.getAttribute('width'));
+      if (!(w >= 20)) { continue; } // skip 13px legend swatches
+      var y = parseFloat(r.getAttribute('y'));
+      var x = parseFloat(r.getAttribute('x'));
+      // Two panels: Kalshi (baseline y=300) on top, Polymarket (baseline y=660) below.
+      var baseline = (y < 340) ? 300 : 660;
+      r.style.transformOrigin = '0px ' + baseline + 'px';
+      // Stagger by horizontal position across the plot area [92, 920].
+      var t = (x - 92) / (920 - 92);
+      if (t < 0) { t = 0; } if (t > 1) { t = 1; }
+      r.style.transitionDelay = Math.round(t * 520) + 'ms';
+      r.classList.add('bar-rise');
+      bars.push(r);
+    }
+    if (!bars.length) { return; }
+
+    svg.classList.add('is-animating'); // arm transitions; bars are now collapsed to baseline
+    var done = false;
+    function reveal() { if (done) { return; } done = true; svg.classList.add('is-revealed'); }
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        for (var j = 0; j < entries.length; j++) {
+          if (entries[j].isIntersecting) { reveal(); io.disconnect(); break; }
+        }
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      io.observe(svg);
+    } else {
+      reveal();
+    }
   })();
   </script>
 </body>
