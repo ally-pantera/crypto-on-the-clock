@@ -9,7 +9,7 @@ Where a figure has no stable id, the enclosing section anchor is given and marke
 
 ## `surf data/` — data file → chart mapping (`crypto on the clock`)
 
-### A. Weekly venue-mix charts — tidy-long primaries (basis: jan_jun)
+### A. Weekly venue-mix charts — tidy-long primaries
 | File | Report exhibit | What it provides |
 |---|---|---|
 | `category_weekly_long_jan_jun_chart.csv` | "Two Venues, Two Different Mixes" (`#cat-volume-chart`) | Stacked weekly category volume, absolute USD; `venue,week,category,volume_usd`; 8 categories |
@@ -18,7 +18,7 @@ Where a figure has no stable id, the enclosing section anchor is given and marke
 
 Per-venue wide siblings (`*_kalshi_*`, `*_polymarket_*`) + `*_verification.json` accompany each and are 0-diff supersets/audit artifacts — supporting data, not separately rendered.
 
-### B. Fee-by-duration charts (basis: jan_jun)
+### B. Fee-by-duration charts
 | File | Report exhibit | What it provides |
 |---|---|---|
 | `fees_weekly_polymarket_duration_jan_jun_chart.csv` | Polymarket fee-by-duration stacked weekly, Fees section — "Polymarket by duration (observed)" slide (`#fee-duration-carousel`, slide 1) | Buckets `5m/15m/1h-4h/daily/weekly_and_longer/total`; observed per-fill; total $53.9M |
@@ -26,14 +26,14 @@ Per-venue wide siblings (`*_kalshi_*`, `*_polymarket_*`) + `*_verification.json`
 
 `fees_weekly_long_jan_jun_chart.csv` is the tidy-long superset of both (0-diff); supporting.
 
-### C. Trade-size distribution (basis: jan_may — NOT June, by design)
+### C. Trade-size distribution
 | File | Report exhibit | What it provides |
 |---|---|---|
 | `trade_size_distribution_long_jan_may_chart.csv` | "Trade-size distribution by venue", Microstructure (no figure id — violin `<svg>` under section `#head-to-head`) | Violin/box + percentile dots; 16 percentile + 62 histogram rows/venue; PM median $3.05 / Kalshi $4.70; cost-basis asymmetry disclosed |
 
 Wide siblings `*_percentiles_*` / `*_histogram_*` + verification JSON are supporting. `jan_may` window is correct — this exhibit was never extended to June.
 
-### D. Bot behavior — 5-minute Polymarket takers (basis: feb_may)
+### D. Bot behavior — 5-minute Polymarket takers
 | File | Report exhibit | What it provides |
 |---|---|---|
 | `bot_behavior_5m_taker_long_feb_may_chart.csv` | Superset feeding all 4 bot exhibits (tidy-long master; source table, no standalone chart) | 46 rows = union of the 4 wide files; 213,111 wallets / 299M trades / $2.07B |
@@ -42,7 +42,15 @@ Wide siblings `*_percentiles_*` / `*_histogram_*` + verification JSON are suppor
 | `bot_cadence_5m_taker_feb_may_chart.csv` | Trade cadence (inter-trade gap) — "Cadence" slide (`#tells-carousel`, slide 2) | "1s or less" = 84.0% of volume |
 | `bot_concentration_5m_taker_feb_may_chart.csv` | Wallet concentration (top-N share) — "Concentration" slide (`#tells-carousel`, slide 3) | Top-1K 43.3% / Top-10K 73.1% of volume |
 
-### E. `settlement_study/` — settlement-manipulation exhibits (basis: May 2026)
+### E. Retention — wallet/activity retention & cohort funnel
+| File | Report exhibit | What it provides |
+|---|---|---|
+| `retention_long_jan_jun_chart.csv` | Retention exhibits, tidy-long source | Master tidy-long retention dataset feeding the retention exhibits. |
+| `retention_wallet_retention_by_product_jan_jun_chart.csv` | Wallet retention by product | Product-level retention curves for the retention exhibit. |
+| `retention_5m_activity_retention_jan_jun_chart.csv` | 5-minute activity retention | Activity-retention curve for the 5-minute market cohort exhibit. |
+| `retention_cohort_funnel_jan_jun_chart.csv` | Cohort retention funnel | Cohort funnel source for the retention funnel exhibit. |
+
+### F. `settlement_study/` — settlement-manipulation exhibits
 All settlement exhibits render inside the report section anchored `#diligence-settlement`; the individual figures within have no stable id. Files live under `surf data/settlement_study/` (paths below are relative to that subfolder).
 | File | Report exhibit | What it provides |
 |---|---|---|
