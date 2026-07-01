@@ -1,0 +1,387 @@
+chart,series,x_value,x_label,metric,value_share,value_pct,source
+wallet_retention_by_product,5-minute,0,0,wallet_retention,1.0,100.0,report/index.html
+wallet_retention_by_product,5-minute,1,1,wallet_retention,0.528832,52.883,report/index.html
+wallet_retention_by_product,5-minute,2,2,wallet_retention,0.321168,32.117,report/index.html
+wallet_retention_by_product,5-minute,3,3,wallet_retention,0.245985,24.599,report/index.html
+wallet_retention_by_product,5-minute,4,4,wallet_retention,0.205109,20.511,report/index.html
+wallet_retention_by_product,5-minute,5,5,wallet_retention,0.168978,16.898,report/index.html
+wallet_retention_by_product,5-minute,6,6,wallet_retention,0.145985,14.599,report/index.html
+wallet_retention_by_product,5-minute,7,7,wallet_retention,0.127007,12.701,report/index.html
+wallet_retention_by_product,5-minute,8,8,wallet_retention,0.114964,11.496,report/index.html
+wallet_retention_by_product,5-minute,9,9,wallet_retention,0.104015,10.401,report/index.html
+wallet_retention_by_product,5-minute,10,10,wallet_retention,0.094891,9.489,report/index.html
+wallet_retention_by_product,5-minute,11,11,wallet_retention,0.090146,9.015,report/index.html
+wallet_retention_by_product,5-minute,12,12,wallet_retention,0.085036,8.504,report/index.html
+wallet_retention_by_product,1-hour,0,0,wallet_retention,1.0,100.0,report/index.html
+wallet_retention_by_product,1-hour,1,1,wallet_retention,0.567153,56.715,report/index.html
+wallet_retention_by_product,1-hour,2,2,wallet_retention,0.355109,35.511,report/index.html
+wallet_retention_by_product,1-hour,3,3,wallet_retention,0.282847,28.285,report/index.html
+wallet_retention_by_product,1-hour,4,4,wallet_retention,0.231022,23.102,report/index.html
+wallet_retention_by_product,1-hour,5,5,wallet_retention,0.183942,18.394,report/index.html
+wallet_retention_by_product,1-hour,6,6,wallet_retention,0.159854,15.985,report/index.html
+wallet_retention_by_product,1-hour,7,7,wallet_retention,0.136861,13.686,report/index.html
+wallet_retention_by_product,1-hour,8,8,wallet_retention,0.122993,12.299,report/index.html
+wallet_retention_by_product,1-hour,9,9,wallet_retention,0.090876,9.088,report/index.html
+wallet_retention_by_product,1-hour,10,10,wallet_retention,0.086131,8.613,report/index.html
+wallet_retention_by_product,1-hour,11,11,wallet_retention,0.1,10.0,report/index.html
+wallet_retention_by_product,1-hour,12,12,wallet_retention,0.094161,9.416,report/index.html
+wallet_retention_by_product,daily,0,0,wallet_retention,1.0,100.0,report/index.html
+wallet_retention_by_product,daily,1,1,wallet_retention,0.655839,65.584,report/index.html
+wallet_retention_by_product,daily,2,2,wallet_retention,0.459124,45.912,report/index.html
+wallet_retention_by_product,daily,3,3,wallet_retention,0.372993,37.299,report/index.html
+wallet_retention_by_product,daily,4,4,wallet_retention,0.316058,31.606,report/index.html
+wallet_retention_by_product,daily,5,5,wallet_retention,0.263869,26.387,report/index.html
+wallet_retention_by_product,daily,6,6,wallet_retention,0.224088,22.409,report/index.html
+wallet_retention_by_product,daily,7,7,wallet_retention,0.206934,20.693,report/index.html
+wallet_retention_by_product,daily,8,8,wallet_retention,0.187956,18.796,report/index.html
+wallet_retention_by_product,daily,9,9,wallet_retention,0.174088,17.409,report/index.html
+wallet_retention_by_product,daily,10,10,wallet_retention,0.158029,15.803,report/index.html
+wallet_retention_by_product,daily,11,11,wallet_retention,0.15,15.0,report/index.html
+wallet_retention_by_product,daily,12,12,wallet_retention,0.140876,14.088,report/index.html
+wallet_retention_by_product,weekly,0,0,wallet_retention,1.0,100.0,report/index.html
+wallet_retention_by_product,weekly,1,1,wallet_retention,0.808029,80.803,report/index.html
+wallet_retention_by_product,weekly,2,2,wallet_retention,0.672993,67.299,report/index.html
+wallet_retention_by_product,weekly,3,3,wallet_retention,0.583942,58.394,report/index.html
+wallet_retention_by_product,weekly,4,4,wallet_retention,0.483942,48.394,report/index.html
+wallet_retention_by_product,weekly,5,5,wallet_retention,0.428832,42.883,report/index.html
+wallet_retention_by_product,weekly,6,6,wallet_retention,0.35292,35.292,report/index.html
+wallet_retention_by_product,weekly,7,7,wallet_retention,0.314964,31.496,report/index.html
+wallet_retention_by_product,weekly,8,8,wallet_retention,0.301095,30.109,report/index.html
+wallet_retention_by_product,weekly,9,9,wallet_retention,0.306934,30.693,report/index.html
+wallet_retention_by_product,weekly,10,10,wallet_retention,0.314964,31.496,report/index.html
+wallet_retention_by_product,weekly,11,11,wallet_retention,0.336131,33.613,report/index.html
+wallet_retention_by_product,weekly,12,12,wallet_retention,0.294891,29.489,report/index.html
+five_minute_activity_retention,wallets,0,0,retention,1.0,100.0,report/index.html
+five_minute_activity_retention,wallets,1,1,retention,0.528832,52.883,report/index.html
+five_minute_activity_retention,wallets,2,2,retention,0.321168,32.117,report/index.html
+five_minute_activity_retention,wallets,3,3,retention,0.245985,24.599,report/index.html
+five_minute_activity_retention,wallets,4,4,retention,0.205109,20.511,report/index.html
+five_minute_activity_retention,wallets,5,5,retention,0.168978,16.898,report/index.html
+five_minute_activity_retention,wallets,6,6,retention,0.145985,14.599,report/index.html
+five_minute_activity_retention,wallets,7,7,retention,0.127007,12.701,report/index.html
+five_minute_activity_retention,wallets,8,8,retention,0.114964,11.496,report/index.html
+five_minute_activity_retention,wallets,9,9,retention,0.104015,10.401,report/index.html
+five_minute_activity_retention,wallets,10,10,retention,0.094891,9.489,report/index.html
+five_minute_activity_retention,wallets,11,11,retention,0.090146,9.015,report/index.html
+five_minute_activity_retention,wallets,12,12,retention,0.085036,8.504,report/index.html
+five_minute_activity_retention,trades,0,0,retention,1.0,100.0,report/index.html
+five_minute_activity_retention,trades,1,1,retention,0.910949,91.095,report/index.html
+five_minute_activity_retention,trades,2,2,retention,0.609124,60.912,report/index.html
+five_minute_activity_retention,trades,3,3,retention,0.485036,48.504,report/index.html
+five_minute_activity_retention,trades,4,4,retention,0.386131,38.613,report/index.html
+five_minute_activity_retention,trades,5,5,retention,0.309854,30.985,report/index.html
+five_minute_activity_retention,trades,6,6,retention,0.244161,24.416,report/index.html
+five_minute_activity_retention,trades,7,7,retention,0.187956,18.796,report/index.html
+five_minute_activity_retention,trades,8,8,retention,0.15292,15.292,report/index.html
+five_minute_activity_retention,trades,9,9,retention,0.124088,12.409,report/index.html
+five_minute_activity_retention,trades,10,10,retention,0.094891,9.489,report/index.html
+five_minute_activity_retention,trades,11,11,retention,0.085036,8.504,report/index.html
+five_minute_activity_retention,trades,12,12,retention,0.078102,7.81,report/index.html
+five_minute_activity_retention,dollars,0,0,retention,1.0,100.0,report/index.html
+five_minute_activity_retention,dollars,1,1,retention,0.744891,74.489,report/index.html
+five_minute_activity_retention,dollars,2,2,retention,0.475182,47.518,report/index.html
+five_minute_activity_retention,dollars,3,3,retention,0.375912,37.591,report/index.html
+five_minute_activity_retention,dollars,4,4,retention,0.29708,29.708,report/index.html
+five_minute_activity_retention,dollars,5,5,retention,0.228832,22.883,report/index.html
+five_minute_activity_retention,dollars,6,6,retention,0.181022,18.102,report/index.html
+five_minute_activity_retention,dollars,7,7,retention,0.140876,14.088,report/index.html
+five_minute_activity_retention,dollars,8,8,retention,0.110949,11.095,report/index.html
+five_minute_activity_retention,dollars,9,9,retention,0.086131,8.613,report/index.html
+five_minute_activity_retention,dollars,10,10,retention,0.067153,6.715,report/index.html
+five_minute_activity_retention,dollars,11,11,retention,0.056934,5.693,report/index.html
+five_minute_activity_retention,dollars,12,12,retention,0.056934,5.693,report/index.html
+cohort_funnel,5m:new_wallets,0,Feb. 9,new_wallets,,23314,report/index.html
+cohort_funnel,5m:week_1_retention,0,Feb. 9,week_1_retention,0.631387,63.139,report/index.html
+cohort_funnel,5m:week_4_retention,0,Feb. 9,week_4_retention,0.277007,27.701,report/index.html
+cohort_funnel,5m:new_wallets,1,,new_wallets,,19486,report/index.html
+cohort_funnel,5m:week_1_retention,1,,week_1_retention,0.518248,51.825,report/index.html
+cohort_funnel,5m:week_4_retention,1,,week_4_retention,0.218613,21.861,report/index.html
+cohort_funnel,5m:new_wallets,2,Feb. 23,new_wallets,,16531,report/index.html
+cohort_funnel,5m:week_1_retention,2,Feb. 23,week_1_retention,0.530657,53.066,report/index.html
+cohort_funnel,5m:week_4_retention,2,Feb. 23,week_4_retention,0.209854,20.985,report/index.html
+cohort_funnel,5m:new_wallets,3,,new_wallets,,17375,report/index.html
+cohort_funnel,5m:week_1_retention,3,,week_1_retention,0.495255,49.526,report/index.html
+cohort_funnel,5m:week_4_retention,3,,week_4_retention,0.189051,18.905,report/index.html
+cohort_funnel,5m:new_wallets,4,Mar. 9,new_wallets,,16513,report/index.html
+cohort_funnel,5m:week_1_retention,4,Mar. 9,week_1_retention,0.532847,53.285,report/index.html
+cohort_funnel,5m:week_4_retention,4,Mar. 9,week_4_retention,0.199635,19.964,report/index.html
+cohort_funnel,5m:new_wallets,5,,new_wallets,,15778,report/index.html
+cohort_funnel,5m:week_1_retention,5,,week_1_retention,0.548905,54.891,report/index.html
+cohort_funnel,5m:week_4_retention,5,,week_4_retention,0.206569,20.657,report/index.html
+cohort_funnel,5m:new_wallets,6,Mar. 23,new_wallets,,15953,report/index.html
+cohort_funnel,5m:week_1_retention,6,Mar. 23,week_1_retention,0.528832,52.883,report/index.html
+cohort_funnel,5m:week_4_retention,6,Mar. 23,week_4_retention,0.194161,19.416,report/index.html
+cohort_funnel,5m:new_wallets,7,,new_wallets,,14034,report/index.html
+cohort_funnel,5m:week_1_retention,7,,week_1_retention,0.527372,52.737,report/index.html
+cohort_funnel,5m:week_4_retention,7,,week_4_retention,0.177737,17.774,report/index.html
+cohort_funnel,5m:new_wallets,8,Apr. 6,new_wallets,,14934,report/index.html
+cohort_funnel,5m:week_1_retention,8,Apr. 6,week_1_retention,0.509124,50.912,report/index.html
+cohort_funnel,5m:week_4_retention,8,Apr. 6,week_4_retention,0.170438,17.044,report/index.html
+cohort_funnel,5m:new_wallets,9,,new_wallets,,12602,report/index.html
+cohort_funnel,5m:week_1_retention,9,,week_1_retention,0.512044,51.204,report/index.html
+cohort_funnel,5m:week_4_retention,9,,week_4_retention,0.186496,18.65,report/index.html
+cohort_funnel,5m:new_wallets,10,Apr. 20,new_wallets,,11134,report/index.html
+cohort_funnel,5m:week_1_retention,10,Apr. 20,week_1_retention,0.503285,50.328,report/index.html
+cohort_funnel,5m:week_4_retention,10,Apr. 20,week_4_retention,0.173723,17.372,report/index.html
+cohort_funnel,5m:new_wallets,11,,new_wallets,,10161,report/index.html
+cohort_funnel,5m:week_1_retention,11,,week_1_retention,0.45073,45.073,report/index.html
+cohort_funnel,5m:new_wallets,12,May 4,new_wallets,,7527,report/index.html
+cohort_funnel,5m:week_1_retention,12,May 4,week_1_retention,0.516788,51.679,report/index.html
+cohort_funnel,5m:new_wallets,13,,new_wallets,,7728,report/index.html
+cohort_funnel,5m:week_1_retention,13,,week_1_retention,0.50438,50.438,report/index.html
+cohort_funnel,5m:new_wallets,14,May 18,new_wallets,,7058,report/index.html
+cohort_funnel,5m:week_1_retention,14,May 18,week_1_retention,0.499635,49.964,report/index.html
+cohort_funnel,5m:new_wallets,15,,new_wallets,,5654,report/index.html
+cohort_funnel,5m:week_1_retention,15,,week_1_retention,0.50219,50.219,report/index.html
+cohort_funnel,5m:new_wallets,16,Jun 8,new_wallets,,6811,report/index.html
+cohort_funnel,5m:week_1_retention,16,Jun 8,week_1_retention,0.522993,52.299,report/index.html
+cohort_funnel,5m:new_wallets,17,,new_wallets,,7673,report/index.html
+cohort_funnel,5m:week_1_retention,17,,week_1_retention,0.523723,52.372,report/index.html
+cohort_funnel,5m:new_wallets,18,Jun 22,new_wallets,,5149,report/index.html
+cohort_funnel,15m:new_wallets,0,Dec. 29,new_wallets,,9816,report/index.html
+cohort_funnel,15m:week_1_retention,0,Dec. 29,week_1_retention,0.780657,78.066,report/index.html
+cohort_funnel,15m:week_4_retention,0,Dec. 29,week_4_retention,0.389416,38.942,report/index.html
+cohort_funnel,15m:new_wallets,1,,new_wallets,,8735,report/index.html
+cohort_funnel,15m:week_1_retention,1,,week_1_retention,0.595255,59.526,report/index.html
+cohort_funnel,15m:week_4_retention,1,,week_4_retention,0.285401,28.54,report/index.html
+cohort_funnel,15m:new_wallets,2,,new_wallets,,7198,report/index.html
+cohort_funnel,15m:week_1_retention,2,,week_1_retention,0.60219,60.219,report/index.html
+cohort_funnel,15m:week_4_retention,2,,week_4_retention,0.268978,26.898,report/index.html
+cohort_funnel,15m:new_wallets,3,Jan. 19,new_wallets,,6651,report/index.html
+cohort_funnel,15m:week_1_retention,3,Jan. 19,week_1_retention,0.605839,60.584,report/index.html
+cohort_funnel,15m:week_4_retention,3,Jan. 19,week_4_retention,0.188321,18.832,report/index.html
+cohort_funnel,15m:new_wallets,4,,new_wallets,,6340,report/index.html
+cohort_funnel,15m:week_1_retention,4,,week_1_retention,0.610219,61.022,report/index.html
+cohort_funnel,15m:week_4_retention,4,,week_4_retention,0.188321,18.832,report/index.html
+cohort_funnel,15m:new_wallets,5,,new_wallets,,11586,report/index.html
+cohort_funnel,15m:week_1_retention,5,,week_1_retention,0.558759,55.876,report/index.html
+cohort_funnel,15m:week_4_retention,5,,week_4_retention,0.137591,13.759,report/index.html
+cohort_funnel,15m:new_wallets,6,Feb. 9,new_wallets,,9328,report/index.html
+cohort_funnel,15m:week_1_retention,6,Feb. 9,week_1_retention,0.467518,46.752,report/index.html
+cohort_funnel,15m:week_4_retention,6,Feb. 9,week_4_retention,0.156204,15.62,report/index.html
+cohort_funnel,15m:new_wallets,7,,new_wallets,,5866,report/index.html
+cohort_funnel,15m:week_1_retention,7,,week_1_retention,0.490511,49.051,report/index.html
+cohort_funnel,15m:week_4_retention,7,,week_4_retention,0.185036,18.504,report/index.html
+cohort_funnel,15m:new_wallets,8,,new_wallets,,5063,report/index.html
+cohort_funnel,15m:week_1_retention,8,,week_1_retention,0.512409,51.241,report/index.html
+cohort_funnel,15m:week_4_retention,8,,week_4_retention,0.179197,17.92,report/index.html
+cohort_funnel,15m:new_wallets,9,Mar. 2,new_wallets,,4963,report/index.html
+cohort_funnel,15m:week_1_retention,9,Mar. 2,week_1_retention,0.524818,52.482,report/index.html
+cohort_funnel,15m:week_4_retention,9,Mar. 2,week_4_retention,0.190511,19.051,report/index.html
+cohort_funnel,15m:new_wallets,10,,new_wallets,,4826,report/index.html
+cohort_funnel,15m:week_1_retention,10,,week_1_retention,0.555839,55.584,report/index.html
+cohort_funnel,15m:week_4_retention,10,,week_4_retention,0.181752,18.175,report/index.html
+cohort_funnel,15m:new_wallets,11,,new_wallets,,4853,report/index.html
+cohort_funnel,15m:week_1_retention,11,,week_1_retention,0.563869,56.387,report/index.html
+cohort_funnel,15m:week_4_retention,11,,week_4_retention,0.192336,19.234,report/index.html
+cohort_funnel,15m:new_wallets,12,Mar. 23,new_wallets,,4274,report/index.html
+cohort_funnel,15m:week_1_retention,12,Mar. 23,week_1_retention,0.574453,57.445,report/index.html
+cohort_funnel,15m:week_4_retention,12,Mar. 23,week_4_retention,0.19635,19.635,report/index.html
+cohort_funnel,15m:new_wallets,13,,new_wallets,,3941,report/index.html
+cohort_funnel,15m:week_1_retention,13,,week_1_retention,0.54562,54.562,report/index.html
+cohort_funnel,15m:week_4_retention,13,,week_4_retention,0.186861,18.686,report/index.html
+cohort_funnel,15m:new_wallets,14,,new_wallets,,3407,report/index.html
+cohort_funnel,15m:week_1_retention,14,,week_1_retention,0.585766,58.577,report/index.html
+cohort_funnel,15m:week_4_retention,14,,week_4_retention,0.204745,20.474,report/index.html
+cohort_funnel,15m:new_wallets,15,Apr. 13,new_wallets,,3184,report/index.html
+cohort_funnel,15m:week_1_retention,15,Apr. 13,week_1_retention,0.551095,55.109,report/index.html
+cohort_funnel,15m:week_4_retention,15,Apr. 13,week_4_retention,0.218248,21.825,report/index.html
+cohort_funnel,15m:new_wallets,16,,new_wallets,,2782,report/index.html
+cohort_funnel,15m:week_1_retention,16,,week_1_retention,0.544891,54.489,report/index.html
+cohort_funnel,15m:week_4_retention,16,,week_4_retention,0.193066,19.307,report/index.html
+cohort_funnel,15m:new_wallets,17,,new_wallets,,2459,report/index.html
+cohort_funnel,15m:week_1_retention,17,,week_1_retention,0.520073,52.007,report/index.html
+cohort_funnel,15m:new_wallets,18,May 4,new_wallets,,1948,report/index.html
+cohort_funnel,15m:week_1_retention,18,May 4,week_1_retention,0.560219,56.022,report/index.html
+cohort_funnel,15m:new_wallets,19,,new_wallets,,2062,report/index.html
+cohort_funnel,15m:week_1_retention,19,,week_1_retention,0.561314,56.131,report/index.html
+cohort_funnel,15m:new_wallets,20,,new_wallets,,1756,report/index.html
+cohort_funnel,15m:week_1_retention,20,,week_1_retention,0.529197,52.92,report/index.html
+cohort_funnel,15m:new_wallets,21,Jun 1,new_wallets,,3088,report/index.html
+cohort_funnel,15m:week_1_retention,21,Jun 1,week_1_retention,0.572993,57.299,report/index.html
+cohort_funnel,15m:new_wallets,22,,new_wallets,,2468,report/index.html
+cohort_funnel,15m:week_1_retention,22,,week_1_retention,0.567153,56.715,report/index.html
+cohort_funnel,15m:new_wallets,23,,new_wallets,,2121,report/index.html
+cohort_funnel,15m:week_1_retention,23,,week_1_retention,0.547445,54.745,report/index.html
+cohort_funnel,15m:new_wallets,24,Jun 22,new_wallets,,1396,report/index.html
+cohort_funnel,1h:new_wallets,0,Dec. 29,new_wallets,,2423,report/index.html
+cohort_funnel,1h:week_1_retention,0,Dec. 29,week_1_retention,0.764964,76.496,report/index.html
+cohort_funnel,1h:week_4_retention,0,Dec. 29,week_4_retention,0.420803,42.08,report/index.html
+cohort_funnel,1h:new_wallets,1,,new_wallets,,3394,report/index.html
+cohort_funnel,1h:week_1_retention,1,,week_1_retention,0.515328,51.533,report/index.html
+cohort_funnel,1h:week_4_retention,1,,week_4_retention,0.199635,19.964,report/index.html
+cohort_funnel,1h:new_wallets,2,,new_wallets,,3330,report/index.html
+cohort_funnel,1h:week_1_retention,2,,week_1_retention,0.572993,57.299,report/index.html
+cohort_funnel,1h:week_4_retention,2,,week_4_retention,0.243066,24.307,report/index.html
+cohort_funnel,1h:new_wallets,3,Jan. 19,new_wallets,,2672,report/index.html
+cohort_funnel,1h:week_1_retention,3,Jan. 19,week_1_retention,0.583942,58.394,report/index.html
+cohort_funnel,1h:week_4_retention,3,Jan. 19,week_4_retention,0.158759,15.876,report/index.html
+cohort_funnel,1h:new_wallets,4,,new_wallets,,2436,report/index.html
+cohort_funnel,1h:week_1_retention,4,,week_1_retention,0.528832,52.883,report/index.html
+cohort_funnel,1h:week_4_retention,4,,week_4_retention,0.168613,16.861,report/index.html
+cohort_funnel,1h:new_wallets,5,,new_wallets,,2246,report/index.html
+cohort_funnel,1h:week_1_retention,5,,week_1_retention,0.527007,52.701,report/index.html
+cohort_funnel,1h:week_4_retention,5,,week_4_retention,0.189781,18.978,report/index.html
+cohort_funnel,1h:new_wallets,6,Feb. 9,new_wallets,,2733,report/index.html
+cohort_funnel,1h:week_1_retention,6,Feb. 9,week_1_retention,0.55438,55.438,report/index.html
+cohort_funnel,1h:week_4_retention,6,Feb. 9,week_4_retention,0.168613,16.861,report/index.html
+cohort_funnel,1h:new_wallets,7,,new_wallets,,2292,report/index.html
+cohort_funnel,1h:week_1_retention,7,,week_1_retention,0.470438,47.044,report/index.html
+cohort_funnel,1h:week_4_retention,7,,week_4_retention,0.162044,16.204,report/index.html
+cohort_funnel,1h:new_wallets,8,,new_wallets,,3260,report/index.html
+cohort_funnel,1h:week_1_retention,8,,week_1_retention,0.669708,66.971,report/index.html
+cohort_funnel,1h:week_4_retention,8,,week_4_retention,0.45,45.0,report/index.html
+cohort_funnel,1h:new_wallets,9,Mar. 2,new_wallets,,2399,report/index.html
+cohort_funnel,1h:week_1_retention,9,Mar. 2,week_1_retention,0.555474,55.547,report/index.html
+cohort_funnel,1h:week_4_retention,9,Mar. 2,week_4_retention,0.236496,23.65,report/index.html
+cohort_funnel,1h:new_wallets,10,,new_wallets,,1932,report/index.html
+cohort_funnel,1h:week_1_retention,10,,week_1_retention,0.538321,53.832,report/index.html
+cohort_funnel,1h:week_4_retention,10,,week_4_retention,0.222628,22.263,report/index.html
+cohort_funnel,1h:new_wallets,11,,new_wallets,,1645,report/index.html
+cohort_funnel,1h:week_1_retention,11,,week_1_retention,0.481387,48.139,report/index.html
+cohort_funnel,1h:week_4_retention,11,,week_4_retention,0.193431,19.343,report/index.html
+cohort_funnel,1h:new_wallets,12,Mar. 23,new_wallets,,1220,report/index.html
+cohort_funnel,1h:week_1_retention,12,Mar. 23,week_1_retention,0.562409,56.241,report/index.html
+cohort_funnel,1h:week_4_retention,12,Mar. 23,week_4_retention,0.215693,21.569,report/index.html
+cohort_funnel,1h:new_wallets,13,,new_wallets,,1257,report/index.html
+cohort_funnel,1h:week_1_retention,13,,week_1_retention,0.587591,58.759,report/index.html
+cohort_funnel,1h:week_4_retention,13,,week_4_retention,0.177372,17.737,report/index.html
+cohort_funnel,1h:new_wallets,14,,new_wallets,,1292,report/index.html
+cohort_funnel,1h:week_1_retention,14,,week_1_retention,0.596715,59.672,report/index.html
+cohort_funnel,1h:week_4_retention,14,,week_4_retention,0.205839,20.584,report/index.html
+cohort_funnel,1h:new_wallets,15,Apr. 13,new_wallets,,1216,report/index.html
+cohort_funnel,1h:week_1_retention,15,Apr. 13,week_1_retention,0.559124,55.912,report/index.html
+cohort_funnel,1h:week_4_retention,15,Apr. 13,week_4_retention,0.190876,19.088,report/index.html
+cohort_funnel,1h:new_wallets,16,,new_wallets,,930,report/index.html
+cohort_funnel,1h:week_1_retention,16,,week_1_retention,0.529927,52.993,report/index.html
+cohort_funnel,1h:week_4_retention,16,,week_4_retention,0.176277,17.628,report/index.html
+cohort_funnel,1h:new_wallets,17,,new_wallets,,755,report/index.html
+cohort_funnel,1h:week_1_retention,17,,week_1_retention,0.551095,55.109,report/index.html
+cohort_funnel,1h:new_wallets,18,May 4,new_wallets,,643,report/index.html
+cohort_funnel,1h:week_1_retention,18,May 4,week_1_retention,0.566058,56.606,report/index.html
+cohort_funnel,1h:new_wallets,19,,new_wallets,,537,report/index.html
+cohort_funnel,1h:week_1_retention,19,,week_1_retention,0.558759,55.876,report/index.html
+cohort_funnel,1h:new_wallets,20,,new_wallets,,498,report/index.html
+cohort_funnel,1h:week_1_retention,20,,week_1_retention,0.526642,52.664,report/index.html
+cohort_funnel,1h:new_wallets,21,Jun 1,new_wallets,,951,report/index.html
+cohort_funnel,1h:week_1_retention,21,Jun 1,week_1_retention,0.600365,60.036,report/index.html
+cohort_funnel,1h:new_wallets,22,,new_wallets,,722,report/index.html
+cohort_funnel,1h:week_1_retention,22,,week_1_retention,0.563504,56.35,report/index.html
+cohort_funnel,1h:new_wallets,23,,new_wallets,,627,report/index.html
+cohort_funnel,1h:week_1_retention,23,,week_1_retention,0.504745,50.474,report/index.html
+cohort_funnel,1h:new_wallets,24,Jun 22,new_wallets,,375,report/index.html
+cohort_funnel,4h:new_wallets,0,Dec. 29,new_wallets,,225,report/index.html
+cohort_funnel,4h:week_1_retention,0,Dec. 29,week_1_retention,0.813504,81.35,report/index.html
+cohort_funnel,4h:week_4_retention,0,Dec. 29,week_4_retention,0.582117,58.212,report/index.html
+cohort_funnel,4h:new_wallets,1,,new_wallets,,189,report/index.html
+cohort_funnel,4h:week_1_retention,1,,week_1_retention,0.724818,72.482,report/index.html
+cohort_funnel,4h:week_4_retention,1,,week_4_retention,0.375547,37.555,report/index.html
+cohort_funnel,4h:new_wallets,2,,new_wallets,,241,report/index.html
+cohort_funnel,4h:week_1_retention,2,,week_1_retention,0.684672,68.467,report/index.html
+cohort_funnel,4h:week_4_retention,2,,week_4_retention,0.352555,35.255,report/index.html
+cohort_funnel,4h:new_wallets,3,Jan. 19,new_wallets,,255,report/index.html
+cohort_funnel,4h:week_1_retention,3,Jan. 19,week_1_retention,0.698175,69.818,report/index.html
+cohort_funnel,4h:week_4_retention,3,Jan. 19,week_4_retention,0.454745,45.474,report/index.html
+cohort_funnel,4h:new_wallets,4,,new_wallets,,244,report/index.html
+cohort_funnel,4h:week_1_retention,4,,week_1_retention,0.692701,69.27,report/index.html
+cohort_funnel,4h:week_4_retention,4,,week_4_retention,0.336131,33.613,report/index.html
+cohort_funnel,4h:new_wallets,5,,new_wallets,,325,report/index.html
+cohort_funnel,4h:week_1_retention,5,,week_1_retention,0.677007,67.701,report/index.html
+cohort_funnel,4h:week_4_retention,5,,week_4_retention,0.233942,23.394,report/index.html
+cohort_funnel,4h:new_wallets,6,Feb. 9,new_wallets,,366,report/index.html
+cohort_funnel,4h:week_1_retention,6,Feb. 9,week_1_retention,0.625547,62.555,report/index.html
+cohort_funnel,4h:week_4_retention,6,Feb. 9,week_4_retention,0.177737,17.774,report/index.html
+cohort_funnel,4h:new_wallets,7,,new_wallets,,420,report/index.html
+cohort_funnel,4h:week_1_retention,7,,week_1_retention,0.516788,51.679,report/index.html
+cohort_funnel,4h:week_4_retention,7,,week_4_retention,0.214234,21.423,report/index.html
+cohort_funnel,4h:new_wallets,8,,new_wallets,,297,report/index.html
+cohort_funnel,4h:week_1_retention,8,,week_1_retention,0.565693,56.569,report/index.html
+cohort_funnel,4h:week_4_retention,8,,week_4_retention,0.343431,34.343,report/index.html
+cohort_funnel,4h:new_wallets,9,Mar. 2,new_wallets,,294,report/index.html
+cohort_funnel,4h:week_1_retention,9,Mar. 2,week_1_retention,0.64635,64.635,report/index.html
+cohort_funnel,4h:week_4_retention,9,Mar. 2,week_4_retention,0.295985,29.599,report/index.html
+cohort_funnel,4h:new_wallets,10,,new_wallets,,269,report/index.html
+cohort_funnel,4h:week_1_retention,10,,week_1_retention,0.613504,61.35,report/index.html
+cohort_funnel,4h:week_4_retention,10,,week_4_retention,0.312409,31.241,report/index.html
+cohort_funnel,4h:new_wallets,11,,new_wallets,,275,report/index.html
+cohort_funnel,4h:week_1_retention,11,,week_1_retention,0.716423,71.642,report/index.html
+cohort_funnel,4h:week_4_retention,11,,week_4_retention,0.458029,45.803,report/index.html
+cohort_funnel,4h:new_wallets,12,Mar. 23,new_wallets,,209,report/index.html
+cohort_funnel,4h:week_1_retention,12,Mar. 23,week_1_retention,0.664964,66.496,report/index.html
+cohort_funnel,4h:week_4_retention,12,Mar. 23,week_4_retention,0.330292,33.029,report/index.html
+cohort_funnel,4h:new_wallets,13,,new_wallets,,274,report/index.html
+cohort_funnel,4h:week_1_retention,13,,week_1_retention,0.554745,55.474,report/index.html
+cohort_funnel,4h:week_4_retention,13,,week_4_retention,0.233577,23.358,report/index.html
+cohort_funnel,4h:new_wallets,14,,new_wallets,,288,report/index.html
+cohort_funnel,4h:week_1_retention,14,,week_1_retention,0.645985,64.599,report/index.html
+cohort_funnel,4h:week_4_retention,14,,week_4_retention,0.211679,21.168,report/index.html
+cohort_funnel,4h:new_wallets,15,Apr. 13,new_wallets,,315,report/index.html
+cohort_funnel,4h:week_1_retention,15,Apr. 13,week_1_retention,0.527007,52.701,report/index.html
+cohort_funnel,4h:week_4_retention,15,Apr. 13,week_4_retention,0.203285,20.328,report/index.html
+cohort_funnel,4h:new_wallets,16,,new_wallets,,237,report/index.html
+cohort_funnel,4h:week_1_retention,16,,week_1_retention,0.561314,56.131,report/index.html
+cohort_funnel,4h:week_4_retention,16,,week_4_retention,0.202555,20.255,report/index.html
+cohort_funnel,4h:new_wallets,17,,new_wallets,,226,report/index.html
+cohort_funnel,4h:week_1_retention,17,,week_1_retention,0.513139,51.314,report/index.html
+cohort_funnel,4h:new_wallets,18,May 4,new_wallets,,158,report/index.html
+cohort_funnel,4h:week_1_retention,18,May 4,week_1_retention,0.64562,64.562,report/index.html
+cohort_funnel,4h:new_wallets,19,,new_wallets,,97,report/index.html
+cohort_funnel,4h:week_1_retention,19,,week_1_retention,0.536131,53.613,report/index.html
+cohort_funnel,4h:new_wallets,20,,new_wallets,,105,report/index.html
+cohort_funnel,4h:week_1_retention,20,,week_1_retention,0.6,60.0,report/index.html
+cohort_funnel,4h:new_wallets,21,Jun 1,new_wallets,,302,report/index.html
+cohort_funnel,4h:week_1_retention,21,Jun 1,week_1_retention,0.736861,73.686,report/index.html
+cohort_funnel,4h:new_wallets,22,,new_wallets,,170,report/index.html
+cohort_funnel,4h:week_1_retention,22,,week_1_retention,0.625912,62.591,report/index.html
+cohort_funnel,4h:new_wallets,23,,new_wallets,,93,report/index.html
+cohort_funnel,4h:week_1_retention,23,,week_1_retention,0.526277,52.628,report/index.html
+cohort_funnel,weekly:new_wallets,0,Dec. 29,new_wallets,,9001,report/index.html
+cohort_funnel,weekly:week_1_retention,0,Dec. 29,week_1_retention,0.932482,93.248,report/index.html
+cohort_funnel,weekly:week_4_retention,0,Dec. 29,week_4_retention,0.735036,73.504,report/index.html
+cohort_funnel,weekly:new_wallets,1,,new_wallets,,6836,report/index.html
+cohort_funnel,weekly:week_1_retention,1,,week_1_retention,0.848905,84.891,report/index.html
+cohort_funnel,weekly:week_4_retention,1,,week_4_retention,0.331752,33.175,report/index.html
+cohort_funnel,weekly:new_wallets,2,,new_wallets,,2963,report/index.html
+cohort_funnel,weekly:week_1_retention,2,,week_1_retention,0.740876,74.088,report/index.html
+cohort_funnel,weekly:week_4_retention,2,,week_4_retention,0.477372,47.737,report/index.html
+cohort_funnel,weekly:new_wallets,3,Jan. 19,new_wallets,,2761,report/index.html
+cohort_funnel,weekly:week_1_retention,3,Jan. 19,week_1_retention,0.746715,74.672,report/index.html
+cohort_funnel,weekly:week_4_retention,3,Jan. 19,week_4_retention,0.228102,22.81,report/index.html
+cohort_funnel,weekly:new_wallets,4,,new_wallets,,1970,report/index.html
+cohort_funnel,weekly:week_1_retention,4,,week_1_retention,0.7,70.0,report/index.html
+cohort_funnel,weekly:week_4_retention,4,,week_4_retention,0.390146,39.015,report/index.html
+cohort_funnel,weekly:new_wallets,5,,new_wallets,,1552,report/index.html
+cohort_funnel,weekly:week_1_retention,5,,week_1_retention,0.721168,72.117,report/index.html
+cohort_funnel,weekly:week_4_retention,5,,week_4_retention,0.467883,46.788,report/index.html
+cohort_funnel,weekly:new_wallets,6,Feb. 9,new_wallets,,2272,report/index.html
+cohort_funnel,weekly:week_1_retention,6,Feb. 9,week_1_retention,0.745985,74.599,report/index.html
+cohort_funnel,weekly:week_4_retention,6,Feb. 9,week_4_retention,0.432117,43.212,report/index.html
+cohort_funnel,weekly:new_wallets,7,,new_wallets,,1715,report/index.html
+cohort_funnel,weekly:week_1_retention,7,,week_1_retention,0.810584,81.058,report/index.html
+cohort_funnel,weekly:week_4_retention,7,,week_4_retention,0.380292,38.029,report/index.html
+cohort_funnel,weekly:new_wallets,8,,new_wallets,,2233,report/index.html
+cohort_funnel,weekly:week_1_retention,8,,week_1_retention,0.816788,81.679,report/index.html
+cohort_funnel,weekly:week_4_retention,8,,week_4_retention,0.34927,34.927,report/index.html
+cohort_funnel,weekly:new_wallets,9,Mar. 2,new_wallets,,3505,report/index.html
+cohort_funnel,weekly:week_1_retention,9,Mar. 2,week_1_retention,0.860584,86.058,report/index.html
+cohort_funnel,weekly:week_4_retention,9,Mar. 2,week_4_retention,0.712774,71.277,report/index.html
+cohort_funnel,weekly:new_wallets,10,,new_wallets,,2289,report/index.html
+cohort_funnel,weekly:week_1_retention,10,,week_1_retention,0.829562,82.956,report/index.html
+cohort_funnel,weekly:week_4_retention,10,,week_4_retention,0.621898,62.19,report/index.html
+cohort_funnel,weekly:new_wallets,11,,new_wallets,,1474,report/index.html
+cohort_funnel,weekly:week_1_retention,11,,week_1_retention,0.712774,71.277,report/index.html
+cohort_funnel,weekly:week_4_retention,11,,week_4_retention,0.463139,46.314,report/index.html
+cohort_funnel,weekly:new_wallets,12,Mar. 23,new_wallets,,1262,report/index.html
+cohort_funnel,weekly:week_1_retention,12,Mar. 23,week_1_retention,0.704015,70.401,report/index.html
+cohort_funnel,weekly:week_4_retention,12,Mar. 23,week_4_retention,0.346715,34.672,report/index.html
+cohort_funnel,weekly:new_wallets,13,,new_wallets,,1113,report/index.html
+cohort_funnel,weekly:week_1_retention,13,,week_1_retention,0.733942,73.394,report/index.html
+cohort_funnel,weekly:week_4_retention,13,,week_4_retention,0.34708,34.708,report/index.html
+cohort_funnel,weekly:new_wallets,14,,new_wallets,,861,report/index.html
+cohort_funnel,weekly:week_1_retention,14,,week_1_retention,0.672993,67.299,report/index.html
+cohort_funnel,weekly:week_4_retention,14,,week_4_retention,0.322628,32.263,report/index.html
+cohort_funnel,weekly:new_wallets,15,Apr. 13,new_wallets,,889,report/index.html
+cohort_funnel,weekly:week_1_retention,15,Apr. 13,week_1_retention,0.719708,71.971,report/index.html
+cohort_funnel,weekly:week_4_retention,15,Apr. 13,week_4_retention,0.255474,25.547,report/index.html
+cohort_funnel,weekly:new_wallets,16,Jun 1,new_wallets,,900,report/index.html
+cohort_funnel,weekly:week_1_retention,16,Jun 1,week_1_retention,0.714964,71.496,report/index.html

@@ -1,0 +1,111 @@
+chart,duration,cohort_index,visible_cohort_label,cohort_week_from_visible_label,new_wallets,prior_exact_wallets_check,week_1_retention_share,week_1_retention_pct,week_4_retention_share,week_4_retention_pct,prior_week_1_share_check,prior_week_4_share_check,source,note
+cohort_funnel,5m,0,Feb. 9,2026-02-09,23314,23314,0.631387,63.139,0.277007,27.701,0.631466,0.276829,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,1,,,19486,,0.518248,51.825,0.218613,21.861,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,2,Feb. 23,2026-02-23,16531,16527,0.530657,53.066,0.209854,20.985,0.530586,0.209778,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,3,,,17375,,0.495255,49.526,0.189051,18.905,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,4,Mar. 9,2026-03-09,16513,16513,0.532847,53.285,0.199635,19.964,0.532974,0.199782,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,5,,,15778,,0.548905,54.891,0.206569,20.657,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,6,Mar. 23,2026-03-23,15953,15950,0.528832,52.883,0.194161,19.416,0.528715,0.194044,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,7,,,14034,,0.527372,52.737,0.177737,17.774,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,8,Apr. 6,2026-04-06,14934,14935,0.509124,50.912,0.170438,17.044,0.50914,0.170271,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,9,,,12602,,0.512044,51.204,0.186496,18.65,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,10,Apr. 20,2026-04-20,11134,11130,0.503285,50.328,0.173723,17.372,0.503235,0.173675,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,11,,,10161,,0.45073,45.073,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,12,May 4,2026-05-04,7527,7530,0.516788,51.679,,,0.516733,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,13,,,7728,,0.50438,50.438,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,14,May 18,2026-05-18,7058,7058,0.499635,49.964,,,0.460895,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,15,,,5654,,0.50219,50.219,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,16,Jun 8,2026-06-08,6811,,0.522993,52.299,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,17,,,7673,,0.523723,52.372,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,5m,18,Jun 22,2026-06-22,5149,,,,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,0,Dec. 29,2025-12-29,9816,9814,0.780657,78.066,0.389416,38.942,0.780823,0.38924,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,1,,,8735,,0.595255,59.526,0.285401,28.54,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,2,,,7198,,0.60219,60.219,0.268978,26.898,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,3,Jan. 19,2026-01-19,6651,6649,0.605839,60.584,0.188321,18.832,0.605805,0.188299,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,4,,,6340,,0.610219,61.022,0.188321,18.832,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,5,,,11586,,0.558759,55.876,0.137591,13.759,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,6,Feb. 9,2026-02-09,9328,9327,0.467518,46.752,0.156204,15.62,0.467353,0.15632,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,7,,,5866,,0.490511,49.051,0.185036,18.504,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,8,,,5063,,0.512409,51.241,0.179197,17.92,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,9,Mar. 2,2026-03-02,4963,4963,0.524818,52.482,0.190511,19.051,0.524884,0.190611,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,10,,,4826,,0.555839,55.584,0.181752,18.175,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,11,,,4853,,0.563869,56.387,0.192336,19.234,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,12,Mar. 23,2026-03-23,4274,4276,0.574453,57.445,0.19635,19.635,0.574369,0.196445,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,13,,,3941,,0.54562,54.562,0.186861,18.686,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,14,,,3407,,0.585766,58.577,0.204745,20.474,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,15,Apr. 13,2026-04-13,3184,3186,0.551095,55.109,0.218248,21.825,0.551161,0.218142,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,16,,,2782,,0.544891,54.489,0.193066,19.307,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,17,,,2459,,0.520073,52.007,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,18,May 4,2026-05-04,1948,1946,0.560219,56.022,,,0.560123,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,19,,,2062,,0.561314,56.131,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,20,,,1756,,0.529197,52.92,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,21,Jun 1,2026-06-01,3088,,0.572993,57.299,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,22,,,2468,,0.567153,56.715,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,23,,,2121,,0.547445,54.745,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,15m,24,Jun 22,2026-06-22,1396,,,,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,0,Dec. 29,2025-12-29,2423,2422,0.764964,76.496,0.420803,42.08,0.76507,0.420727,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,1,,,3394,,0.515328,51.533,0.199635,19.964,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,2,,,3330,,0.572993,57.299,0.243066,24.307,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,3,Jan. 19,2026-01-19,2672,2673,0.583942,58.394,0.158759,15.876,0.583988,0.158623,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,4,,,2436,,0.528832,52.883,0.168613,16.861,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,5,,,2246,,0.527007,52.701,0.189781,18.978,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,6,Feb. 9,2026-02-09,2733,2733,0.55438,55.438,0.168613,16.861,0.554336,0.168679,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,7,,,2292,,0.470438,47.044,0.162044,16.204,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,8,,,3260,,0.669708,66.971,0.45,45.0,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,9,Mar. 2,2026-03-02,2399,2398,0.555474,55.547,0.236496,23.65,0.555463,0.236447,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,10,,,1932,,0.538321,53.832,0.222628,22.263,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,11,,,1645,,0.481387,48.139,0.193431,19.343,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,12,Mar. 23,2026-03-23,1220,1220,0.562409,56.241,0.215693,21.569,0.562295,0.215574,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,13,,,1257,,0.587591,58.759,0.177372,17.737,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,14,,,1292,,0.596715,59.672,0.205839,20.584,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,15,Apr. 13,2026-04-13,1216,1216,0.559124,55.912,0.190876,19.088,0.559211,0.190789,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,16,,,930,,0.529927,52.993,0.176277,17.628,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,17,,,755,,0.551095,55.109,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,18,May 4,2026-05-04,643,643,0.566058,56.606,,,0.566096,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,19,,,537,,0.558759,55.876,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,20,,,498,,0.526642,52.664,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,21,Jun 1,2026-06-01,951,,0.600365,60.036,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,22,,,722,,0.563504,56.35,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,23,,,627,,0.504745,50.474,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,1h,24,Jun 22,2026-06-22,375,,,,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,0,Dec. 29,2025-12-29,225,225,0.813504,81.35,0.582117,58.212,0.813333,0.582222,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,1,,,189,,0.724818,72.482,0.375547,37.555,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,2,,,241,,0.684672,68.467,0.352555,35.255,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,3,Jan. 19,2026-01-19,255,255,0.698175,69.818,0.454745,45.474,0.698039,0.454902,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,4,,,244,,0.692701,69.27,0.336131,33.613,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,5,,,325,,0.677007,67.701,0.233942,23.394,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,6,Feb. 9,2026-02-09,366,366,0.625547,62.555,0.177737,17.774,0.625683,0.177596,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,7,,,420,,0.516788,51.679,0.214234,21.423,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,8,,,297,,0.565693,56.569,0.343431,34.343,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,9,Mar. 2,2026-03-02,294,294,0.64635,64.635,0.295985,29.599,0.646259,0.295918,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,10,,,269,,0.613504,61.35,0.312409,31.241,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,11,,,275,,0.716423,71.642,0.458029,45.803,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,12,Mar. 23,2026-03-23,209,209,0.664964,66.496,0.330292,33.029,0.665072,0.330144,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,13,,,274,,0.554745,55.474,0.233577,23.358,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,14,,,288,,0.645985,64.599,0.211679,21.168,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,15,Apr. 13,2026-04-13,315,315,0.527007,52.701,0.203285,20.328,0.526984,0.203175,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,16,,,237,,0.561314,56.131,0.202555,20.255,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,17,,,226,,0.513139,51.314,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,18,May 4,2026-05-04,158,158,0.64562,64.562,,,0.64557,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,19,,,97,,0.536131,53.613,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,20,,,105,,0.6,60.0,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,21,Jun 1,2026-06-01,302,,0.736861,73.686,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,22,,,170,,0.625912,62.591,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,4h,23,,,93,,0.526277,52.628,,,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,0,Dec. 29,2025-12-29,9001,9001,0.932482,93.248,0.735036,73.504,0.932341,0.735141,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,1,,,6836,,0.848905,84.891,0.331752,33.175,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,2,,,2963,,0.740876,74.088,0.477372,47.737,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,3,Jan. 19,2026-01-19,2761,2760,0.746715,74.672,0.228102,22.81,0.746739,0.228261,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,4,,,1970,,0.7,70.0,0.390146,39.015,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,5,,,1552,,0.721168,72.117,0.467883,46.788,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,6,Feb. 9,2026-02-09,2272,2271,0.745985,74.599,0.432117,43.212,0.745927,0.431968,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,7,,,1715,,0.810584,81.058,0.380292,38.029,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,8,,,2233,,0.816788,81.679,0.34927,34.927,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,9,Mar. 2,2026-03-02,3505,3505,0.860584,86.058,0.712774,71.277,0.860485,0.712696,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,10,,,2289,,0.829562,82.956,0.621898,62.19,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,11,,,1474,,0.712774,71.277,0.463139,46.314,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,12,Mar. 23,2026-03-23,1262,1260,0.704015,70.401,0.346715,34.672,0.703968,0.346825,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,13,,,1113,,0.733942,73.394,0.34708,34.708,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,14,,,861,,0.672993,67.299,0.322628,32.263,,,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,15,Apr. 13,2026-04-13,889,889,0.719708,71.971,0.255474,25.547,0.704162,0.397075,report/index.html,chart-ready June retention dataset
+cohort_funnel,weekly,16,Jun 1,2026-06-01,900,,0.714964,71.496,,,,,report/index.html,chart-ready June retention dataset
