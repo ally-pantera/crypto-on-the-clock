@@ -1,0 +1,5 @@
+chart,rank_cutoff,label,wallets_in_cutoff,volume_usd,volume_share,volume_share_pct,total_wallets,total_volume_usd,window_start,window_end,source,builder
+concentration,10,Top 10,10,130229634.11371191,0.06287095260149579,6.287095260149579,213111,2071380004.9947639,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,codex_review/build_bot_section.py
+concentration,100,Top 100,100,446883785.9937019,0.2157420583939795,21.574205839397948,213111,2071380004.9947639,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,codex_review/build_bot_section.py
+concentration,1000,Top 1.0K,1000,896465385.8465482,0.4327865402219205,43.27865402219204,213111,2071380004.9947639,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,codex_review/build_bot_section.py
+concentration,10000,Top 10.0K,10000,1514919388.774292,0.7313575418905917,73.13575418905917,213111,2071380004.9947639,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,codex_review/build_bot_section.py

@@ -1,0 +1,10 @@
+chart,metric,classification,share,share_pct,raw_value,raw_unit,window_start,window_end,source,builder
+trader_classification,Wallets,Bot-like,0.25731191726377334,25.731191726377332,54836,wallets,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Wallets,Sophisticated,0.0029562059208581445,0.2956205920858144,630,wallets,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Wallets,Retail,0.7397318768153686,73.97318768153686,157645,wallets,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Trades,Bot-like,0.8788991943758396,87.88991943758397,262841126.0,trades,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Trades,Sophisticated,0.0001493794533141358,0.01493794533141358,44673.0,trades,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Trades,Retail,0.12095142617084619,12.095142617084619,36171394.0,trades,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Volume,Bot-like,0.8629061782371704,86.29061782371704,1787406603.7869227,usd,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Volume,Sophisticated,0.00973065027753601,0.973065027753601,20155874.42048484,usd,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
+trader_classification,Volume,Retail,0.12736317148529355,12.736317148529356,263817526.78735635,usd,2026-02-12,2026-05-28,codex_review/polymarket_5m_wallet_behavior_2026-06-09-1231.csv,surf_pull/repro_bots.py
