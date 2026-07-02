@@ -317,13 +317,18 @@
     }
 
     .report-hero .hero-subtitle {
-      max-width: 40ch;
-      margin: -4px auto 18px;
-      color: var(--pm-ink-mid);
-      font-size: clamp(1rem, 1.8vw, 1.22rem);
-      font-weight: 400;
-      line-height: 1.45;
-      letter-spacing: -0.005em;
+      margin: 0 auto 18px;
+      color: var(--pm-accent);
+      font-family: var(--pm-font-ui);
+      font-size: 0.85rem;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      line-height: 1.35;
+    }
+    @media (min-width: 900px) {
+      .report-hero .hero-subtitle { white-space: nowrap; }
     }
 
     .report-hero .dek {
