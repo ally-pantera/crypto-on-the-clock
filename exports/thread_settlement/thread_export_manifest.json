@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-07-06T16:33:36.256Z",
+  "source": "C:\\Users\\AllyZach\\Documents\\IC_pred\\IC_pred\\report\\crypto on the clock.html",
+  "scale": 2,
+  "jobs": [
+    {
+      "file": "settle_01_volume_erupts_at_the_close_thread.png",
+      "visibleTitle": "Inside the Cycle: Volume Erupts at the Close",
+      "visibleSubtitle": "Mean Binance BTC spot volume by second into the cycle, still-even vs already-decided, 5- and 15-minute contracts",
+      "cssClip": {
+        "x": 372,
+        "y": 15873.828125,
+        "width": 990,
+        "height": 720.34375
+      },
+      "pixels": {
+        "w": 2092,
+        "h": 1552
+      },
+      "aspect": "1.348",
+      "path": "C:\\Users\\AllyZach\\Documents\\IC_pred\\IC_pred\\report\\exports\\thread_settlement\\settle_01_volume_erupts_at_the_close_thread.png",
+      "note": "v3 fix: native card aspect (no forced 16:9), tight card capture with slim even 28px CSS margin filled with the card's own background; card chrome flattened in-session. Replaces v2, whose 16:9 pad left wide white side bands."
+    },
+    {
+      "file": "settle_02_resolve_on_small_price_differences_thread.png",
+      "visibleTitle": "Short Markets Resolve on Small Price Differences",
+      "visibleSubtitle": "Share of BTC up/down cycles by the walk-away move (|close âˆ’ open| / open), per cycle",
+      "cssClip": {
+        "x": 492,
+        "y": 17012.28125,
+        "width": 990,
+        "height": 546.21875
+      },
+      "pixels": {
+        "w": 1980,
+        "h": 1092
+      },
+      "aspect": "1.813",
+      "path": "C:\\Users\\AllyZach\\Documents\\IC_pred\\IC_pred\\report\\exports\\thread_settlement\\settle_02_resolve_on_small_price_differences_thread.png"
+    },
+    {
+      "file": "settle_03_price_moves_then_snaps_back_thread.png",
+      "visibleTitle": "The Price Moves, Then Snaps Back",
+      "visibleSubtitle": "Sign-aligned Binance BTC price around the close in still-even cycles, 5- vs 15-minute contracts",
+      "cssClip": {
+        "x": 492,
+        "y": 19964.046875,
+        "width": 990,
+        "height": 507.359375
+      },
+      "pixels": {
+        "w": 1980,
+        "h": 1015
+      },
+      "aspect": "1.951",
+      "path": "C:\\Users\\AllyZach\\Documents\\IC_pred\\IC_pred\\report\\exports\\thread_settlement\\settle_03_price_moves_then_snaps_back_thread.png"
+    },
+    {
+      "file": "settle_04_longer_window_price_drifts_further_thread.png",
+      "visibleTitle": "Over a Longer Window, Price Drifts Further",
+      "visibleSubtitle": "Typical (median) Bitcoin move from open to close by contract length; BTC/USDT on Binance",
+      "cssClip": {
+        "x": 492,
+        "y": 18250.28125,
+        "width": 990,
+        "height": 507.359375
+      },
+      "pixels": {
+        "w": 1980,
+        "h": 1015
+      },
+      "aspect": "1.951",
+      "path": "C:\\Users\\AllyZach\\Documents\\IC_pred\\IC_pred\\report\\exports\\thread_settlement\\settle_04_longer_window_price_drifts_further_thread.png"
+    },
+    {
+      "file": "settle_05_how_settlement_sensitive_trading_can_work_thread.png",
+      "visibleTitle": "How Settlement-Sensitive Trading Can Work",
+      "visibleSubtitle": "How a last-second Binance move can decide a 5-minute Polymarket payout",
+      "cssClip": {
+        "x": 372,
+        "y": 15140.265625,
+        "width": 990,
+        "height": 582.078125
+      },
+      "pixels": {
+        "w": 2092,
+        "h": 1276
+      },
+      "aspect": "1.639",
+      "path": "C:\\Users\\AllyZach\\Documents\\IC_pred\\IC_pred\\report\\exports\\thread_settlement\\settle_05_how_settlement_sensitive_trading_can_work_thread.png",
+      "note": "Settlement-chain diagram v7 (user-approved 2026-07-06 lay-reader copy rewrite): cards now read as a story in the money direction — (1) THE COIN FLIP (contract still 50/50, Down 49c / Up 51c, \"winner takes $1 per share\"), (2) THE RULE (one price check, close at-or-above open, even a tie, Up wins; new mini open->close timeline SVG with gold close dot), (3) THE PLAY (new actor card: either side can push the price its way, buying OR selling; rail is the Binance -> Chainlink -> Polymarket arrow chain), (4) THE FOOTPRINT (\"And that is exactly what the data shows\" headline: burst + tie-break + snap-back; the old \"Proxy only\" tag removed). The old DATA PATH card is deleted; its venue-mix hedge is consolidated into the single figcaption note. No em dashes anywhere per user. Same capture pipeline as v6 (native aspect, 28px margin, chrome flattened in-session). Supersedes the prior settle_05 PNG of the same slug."
+    }
+  ],
+  "leadFixedAt": "2026-07-06T17:20:08.081Z",
+  "diagramExportedAt": "2026-07-06T22:22:36.818Z"
+}
