@@ -1445,6 +1445,159 @@
       font-size: 13px;
     }
 
+    /* --- Settlement-chain diagram (Part II settlement exhibit) --- */
+    .settle-chain-figure {
+      margin: 28px 0;
+    }
+
+    .settle-chain {
+      display: grid;
+      grid-template-columns: 56px minmax(0, 1fr);
+      gap: 0 18px;
+      padding: 20px 22px 24px 14px;
+      background: var(--pm-white);
+    }
+
+    .sc-lane {
+      position: relative;
+    }
+
+    .sc-lane-line {
+      position: absolute;
+      top: 6px;
+      bottom: 24px;
+      left: 50%;
+      width: 3px;
+      margin-left: -1.5px;
+      border-radius: 2px;
+      background: linear-gradient(to bottom, var(--pm-red) 0%, rgba(168, 61, 61, 0.55) 55%, rgba(168, 61, 61, 0.28) 100%);
+    }
+
+    .sc-lane-head {
+      position: absolute;
+      bottom: 12px;
+      left: 50%;
+      margin-left: -7px;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 10px solid rgba(168, 61, 61, 0.45);
+    }
+
+    .sc-lane-label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(180deg);
+      writing-mode: vertical-rl;
+      padding: 10px 2px;
+      background: var(--pm-white);
+      color: var(--pm-red);
+      font-family: var(--pm-font-ui);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .sc-flow {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .sc-node {
+      border: 1px solid color-mix(in srgb, var(--venue-accent, var(--pm-accent)) 22%, var(--pm-rule));
+      border-radius: var(--pm-radius);
+      background: var(--pm-bg);
+      padding: 13px 16px 14px;
+    }
+
+    .sc-node-eyebrow {
+      color: var(--pm-ink-light);
+      font-family: var(--pm-font-ui);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .sc-node-name {
+      margin-top: 3px;
+      color: var(--pm-ink);
+      font-family: var(--pm-font-display);
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .sc-overlay-note {
+      margin-top: 9px;
+      padding: 7px 11px 8px;
+      border: 1px solid color-mix(in srgb, var(--pm-red) 24%, var(--pm-rule));
+      border-radius: 4px;
+      background: var(--pm-red-soft);
+      color: var(--pm-red);
+      font-family: var(--pm-font-ui);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .sc-hop {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 0 4px 26px;
+      min-height: 42px;
+    }
+
+    .sc-hop-arrow {
+      position: relative;
+      width: 0;
+      align-self: stretch;
+      min-height: 34px;
+    }
+
+    .sc-hop-arrow::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 7px;
+      left: -1px;
+      border-left: 2px solid var(--pm-ink-mid);
+    }
+
+    .sc-hop-arrow::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -6px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 7px solid var(--pm-ink-mid);
+    }
+
+    @media (max-width: 640px) {
+      .settle-chain {
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 0 10px;
+        padding: 16px 14px 18px 8px;
+      }
+      .sc-lane-label {
+        display: none;
+      }
+      .sc-node-name {
+        font-size: 15.5px;
+      }
+      .sc-hop {
+        padding-left: 18px;
+      }
+    }
+
     .theme-note {
       border-left-color: var(--venue-accent);
       background: var(--venue-accent-soft);
@@ -3649,6 +3802,59 @@
         <div class="kicker" style="color: var(--pm-accent);">Trading into the close</div>
         <h2 class="section-title" style="color: var(--pm-ink);">Bitcoin trading on Binance spikes at the close when the Polymarket resolution can still flip.</h2>
         <p>Polymarket&rsquo;s 5-minute and 15-minute Bitcoin markets pay based on whether the Chainlink BTC/USD reading at the end of the contract window is at or above the reading at the beginning of that window, as specified in the <a href="https://polymarket.com/event/btc-updown-5m-1782874500" target="_blank" rel="noopener noreferrer">market rules</a>. Because that benchmark is derived from prices in tradeable crypto markets, a trader can hold a Polymarket position while simultaneously trading Bitcoin elsewhere, and particularly on the venues whose prices are sourced for determining the resolution.</p>
+        <figure class="report-chart is-wide settle-chain-figure">
+          <div class="bot-chart-head">
+            <div class="bot-chart-title">How a Five-Minute Settlement Can Be Pushed</div>
+            <div class="bot-chart-subtitle">The settlement chain, hop by hop</div>
+          </div>
+          <div class="settle-chain">
+            <div class="sc-lane" aria-hidden="true">
+              <div class="sc-lane-line"></div>
+              <div class="sc-lane-head"></div>
+              <div class="sc-lane-label">The push &mdash; attenuating as it travels</div>
+            </div>
+            <div class="sc-flow">
+              <div class="sc-node">
+                <div class="sc-node-eyebrow">Hop 1</div>
+                <div class="sc-node-name">Binance + other spot venues</div>
+                <div class="sc-overlay-note"><strong>&#9312; The push</strong></div>
+              </div>
+              <div class="sc-hop">
+                <span class="sc-hop-arrow"></span>
+              </div>
+              <div class="sc-node">
+                <div class="sc-node-eyebrow">Hop 2</div>
+                <div class="sc-node-name">Data aggregators &rarr; medians</div>
+                <div class="sc-overlay-note"><strong>&#9313; Damped</strong></div>
+              </div>
+              <div class="sc-hop">
+                <span class="sc-hop-arrow"></span>
+              </div>
+              <div class="sc-node">
+                <div class="sc-node-eyebrow">Hop 3</div>
+                <div class="sc-node-name">Chainlink BTC/USD stream</div>
+                <div class="sc-overlay-note"><strong>&#9314; Residual move</strong></div>
+              </div>
+              <div class="sc-hop">
+                <span class="sc-hop-arrow"></span>
+              </div>
+              <div class="sc-node">
+                <div class="sc-node-eyebrow">Hop 4</div>
+                <div class="sc-node-name">Settlement snapshot at window end</div>
+                <div class="sc-overlay-note"><strong>&#9315; Boundary gap</strong></div>
+              </div>
+              <div class="sc-hop">
+                <span class="sc-hop-arrow"></span>
+              </div>
+              <div class="sc-node">
+                <div class="sc-node-eyebrow">Hop 5</div>
+                <div class="sc-node-name">Polymarket 5-min Up/Down</div>
+                <div class="sc-overlay-note"><strong>&#9316; The flip</strong></div>
+              </div>
+            </div>
+          </div>
+          <figcaption><strong>From a Binance order to a settled contract:</strong> how a 5-minute Polymarket market resolves.</figcaption>
+        </figure>
         <p>The opportunity is easiest to understand with a simple example. Suppose Bitcoin begins a five-minute window at $100,000 and the Polymarket contract is still trading near 50/50 with seconds left. A trader holding Up can also buy Bitcoin in the underlying market. That trade might be a hedge against the Polymarket position or an arbitrage between the two markets. But if the pressure contributes to a broad enough move in Bitcoin, the closing benchmark could end above its opening level, and which side pays out changes with it. The risk and profit of this strategy are modeled mathematically in the <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7028398" target="_blank" rel="noopener noreferrer">paper</a> mentioned below, which first described the strategy and documented supporting evidence.</p>
         <p>The same observed spot trade could therefore reflect hedging, arbitrage, inventory management, or positioning around the settlement itself. Trade data cannot identify the motive. What it can show is whether the underlying market behaves as settlement-driven trading should. Most of that activity could be ordinary hedging, arbitrage, or inventory management. But in principle, a broad enough move in the underlying Bitcoin market could also affect the settlement benchmark and determine which side of the Polymarket contract pays out.</p>
         <p>Our analysis asks whether that cross-market incentive leaves a repeatable footprint. We use second-by-second Binance spot data as a proxy for activity in the underlying Bitcoin market, not as Polymarket&rsquo;s settlement source. If the trading is settlement-driven, it should appear on Polymarket&rsquo;s clock: in the final seconds, primarily when the outcome can still flip, and then fade after settlement.</p>
